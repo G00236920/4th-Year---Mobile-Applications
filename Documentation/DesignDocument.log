@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.18)  18 SEP 2018 23:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.18)  19 SEP 2018 17:30
 entering extended mode
 **./DesignDocument.tex
 (DesignDocument.tex
@@ -173,11 +173,16 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <images/defender.png, id=16, 1067.99pt x 803.0pt>
 File: images/defender.png Graphic file (type png)
 <use images/defender.png>
-Package pdftex.def Info: images/defender.png  used on input line 28.
+Package pdftex.def Info: images/defender.png  used on input line 26.
 (pdftex.def)             Requested size: 405.84042pt x 305.14317pt.
 
-Overfull \hbox (75.84042pt too wide) in paragraph at lines 28--29
-[][] 
+Overfull \hbox (60.84042pt too wide) in paragraph at lines 26--27
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
  []
 
 [4
@@ -186,11 +191,16 @@ Overfull \hbox (75.84042pt too wide) in paragraph at lines 28--29
 <images/rtype.jpg, id=20, 1284.8pt x 722.7pt>
 File: images/rtype.jpg Graphic file (type jpg)
 <use images/rtype.jpg>
-Package pdftex.def Info: images/rtype.jpg  used on input line 37.
+Package pdftex.def Info: images/rtype.jpg  used on input line 34.
 (pdftex.def)             Requested size: 385.44298pt x 216.81166pt.
 
-Overfull \hbox (55.44298pt too wide) in paragraph at lines 37--38
-[][] 
+Overfull \hbox (40.44298pt too wide) in paragraph at lines 34--35
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
  []
 
 [5
@@ -199,11 +209,16 @@ Overfull \hbox (55.44298pt too wide) in paragraph at lines 37--38
 <images/mario.jpg, id=24, 1284.8pt x 722.7pt>
 File: images/mario.jpg Graphic file (type jpg)
 <use images/mario.jpg>
-Package pdftex.def Info: images/mario.jpg  used on input line 49.
+Package pdftex.def Info: images/mario.jpg  used on input line 45.
 (pdftex.def)             Requested size: 385.44298pt x 216.81166pt.
 
-Overfull \hbox (55.44298pt too wide) in paragraph at lines 49--50
-[][] 
+Overfull \hbox (40.44298pt too wide) in paragraph at lines 45--46
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
  []
 
 [6
@@ -212,10 +227,10 @@ Overfull \hbox (55.44298pt too wide) in paragraph at lines 49--50
 <images/donkeykong.jpg, id=28, 3340.48pt x 1704.3675pt>
 File: images/donkeykong.jpg Graphic file (type jpg)
 <use images/donkeykong.jpg>
-Package pdftex.def Info: images/donkeykong.jpg  used on input line 53.
+Package pdftex.def Info: images/donkeykong.jpg  used on input line 56.
 (pdftex.def)             Requested size: 400.8403pt x 204.51527pt.
 
-Overfull \hbox (55.8403pt too wide) in paragraph at lines 53--54
+Overfull \hbox (55.8403pt too wide) in paragraph at lines 56--57
 [] 
  []
 
@@ -239,7 +254,7 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/nltes/AppData/Local
 ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/U
 sers/nltes/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 17.pfb>
-Output written on DesignDocument.pdf (8 pages, 616240 bytes).
+Output written on DesignDocument.pdf (8 pages, 616249 bytes).
 PDF statistics:
  53 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
