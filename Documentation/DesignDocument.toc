@@ -13,10 +13,10 @@
 \contentsline {section}{\numberline {3}Design}{9}
 \contentsline {subsection}{\numberline {3.1}Front End}{9}
 \contentsline {subsection}{\numberline {3.2}In-Game Menus}{9}
-\contentsline {subsection}{\numberline {3.3}Control Mechanisms}{9}
-\contentsline {subsection}{\numberline {3.4}The Game}{9}
-\contentsline {section}{\numberline {4}Game Mechanics}{9}
-\contentsline {section}{\numberline {5}System Compatibility}{9}
-\contentsline {section}{\numberline {6}Hardware Functions Used}{9}
-\contentsline {section}{\numberline {7}Conclusion}{9}
-\contentsline {section}{\numberline {8}References and Sources}{9}
+\contentsline {subsection}{\numberline {3.3}Control Mechanisms}{10}
+\contentsline {subsection}{\numberline {3.4}The Game}{10}
+\contentsline {section}{\numberline {4}Game Mechanics}{10}
+\contentsline {section}{\numberline {5}System Compatibility}{10}
+\contentsline {section}{\numberline {6}Hardware Functions Used}{10}
+\contentsline {section}{\numberline {7}Conclusion}{10}
+\contentsline {section}{\numberline {8}References and Sources}{10}

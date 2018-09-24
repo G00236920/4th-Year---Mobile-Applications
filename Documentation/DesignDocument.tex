@@ -66,7 +66,8 @@ In 1994 Nintendo released Donkey Kong Country on the super Nintendo, this game i
 \includegraphics[width=\linewidth]{mario}
 \end{minipage} \hfill
 \begin{minipage}{0.55\textwidth}\raggedright
-As one of the biggest names in gaming history and the face of an empire, that being Nintendo, Mario had his humble beginnings as previous mentioned in the previous section about Donkey Kong. Mario started without the name Mario and was known at the time as Jump Man. In the game Jump Man represented an ape trainer. Donkey Kong escapes his Captor(Mario), Donkey Kong then kidnaps jump man's girlfriend and drops barrels and springs in an attempt to stop the trainer from reaching the top of the platform where he can reach his girlfriend and then Donkey Kong will take her and run to the next level. The game had a huge following and Nintendo decided to give Mario his own story and game.
+As one of the biggest names in gaming history and the face of an empire, that being Nintendo, Mario had his humble beginnings as previously mentioned in the last[[
+ section about Donkey Kong. Mario started without the name Mario and was known at the time as Jump Man. In the game Jump Man represented an ape trainer. Donkey Kong escapes his Captor(Mario), Donkey Kong then kidnaps jump man's girlfriend and drops barrels and springs in an attempt to stop the trainer from reaching the top of the platform where he can reach his girlfriend and then Donkey Kong will take her and run to the next level. The game had a huge following and Nintendo decided to give Mario his own story and game.
 \end{minipage} \newline \newline
 
 Nintendo went on to release super Mario Bros in 1985. which went on to sell 63 million copies of that game alone and more than 600 million games in the franchise. The first game was released on the Nintendo entertainment system in 1985. The levels consisted of a side scrolling platform game, when Mario moved the background moved with him. Mario's goal was to rescue princess peach who has been kidnapped by the evil bowser. Mario would have to traverse each level to reach the end, which various degrees of difficulty and different types of obstacles. Each level would also consist of platforms that allowed Mario to navigate the level in a new way, such as avoiding an enemy by jumping to a platform overhead or by travelling down a tube and skipping to a section further up the level. \newline
@@ -92,7 +93,8 @@ The game was named after Tetraminoes, named after the four pieces each of the bl
 Tetris beginning as can be imagined was not an easy one, due to the cold war and how the game was created by a programme than worked on the Russian side of the iron curtain. Alexey Pajitnov had created the game at the Russian Academy of Sciences, this made the game the property of the Russian government. Due to the games addictive gameplay, the game quickly spread. It made to the US and was picked up by Robert Stein who had to fight a legal battle for the rights to the game and even had to attend a meeting in Russia to negotiate the sale of the game. The game was then released on the US market by Spectrum Holobyte. \newline
 
 One of the great facts that I enjoy about Tetris on the Nintendo Gameboy system is that Steve Wozniak, the co-founder of Apple Computers was so good at the game that he held the high score for so long and dominated it, that Nintendo banned him from submitting scores. Wozniak then started submitting his scores while spelling his name backwards(Evets Kainzow). The reason that the Gameboy was released with Tetris in place of Mario as expected when Nintendo release a system was from one famous statement from game developer Henk Rogers who said "If you release the gameboy with Mario, it will be for little boys, if you release it with Tetris, It will be for everybody". The highest score on classic NES Tetris is 999,999. If you even get close to that, you are an incredible gamer. The 1987 PC version of Tetris came with a 'boss button'. It pulled up a generic spreadsheet on your screen to make it look like you were working rather than playing a computer game at your desk. \newline
-Another interesting fact regarding Tetris, If you have ever played a game so much that you start to dreamt of the game or had the mental image of the game. This is known as the Tetris effect or Tetris Syndrome, I have experienced this like most gamers, most notably as a teenager I remember playing chess so much, that I was imagining human beings who were speaking in a group as being chess pieces placed on a board. When I was asking people to move from where they were standing was when i knew I should stop playing for a while. \newline
+
+Another interesting fact regarding Tetris, If you have ever played a game so much that you start to dream of the game or had the mental image of the game. This is known as the Tetris effect or Tetris Syndrome, I have experienced this like most gamers, most notably as a teenager I remember playing chess so much, that I was imagining human beings who were speaking in a group as being chess pieces placed on a board. When I was asking people to move from where they were standing was when i knew I should stop playing for a while. \newline
 
 \clearpage
 
@@ -115,13 +117,43 @@ The Reason was simple. we loved these games, we loved the challenges. We loved t
 
 \clearpage
 \section{Design}
+\begin{minipage}{0.4\textwidth}
+\includegraphics[width=\linewidth]{crossyroad}
+\end{minipage} \hfill
+\begin{minipage}{0.55\textwidth}\raggedright
+The game that im going to base my project on is a game called Crossyroad, it has been described as a cross between Frogger and Flappy Bird. The game takes a humorous look at why the chicken crossed the road. You play as a chicken, you can move up and down, but also move forward. the goal is to gain points by staying alive, get the chicken across the road by tapping on the screen and going one grid at a time. The game is an endless runner with a procedurally generated level.
+\end{minipage} \newline
+
+This makes the game addictive and different every time you play it. I have been stuck to this game in the past similar to Donkey Kong, In fact myself and my partner would try beat each others scores while the other was asleep. The reigning champ would node off happy in the knowledge that they had a high score the other couldn't beat. Then wake up the next day opposed and have to cancel work to reclaim the title, or simply wake up wondering why the other hadn't slept all night and seemed very irritable. \newline
+
+Crossyroad is a 3D platform endless runner, but i will be making a 2D version. In place of a chicken I will be using a ball that can rotate and force can be added to, this will mean it will be harder to control. The reason that i have chosen this type of game is because of the best ideas from the games I have listed in my research. Kong was addictive due to its random nature and the fact that you still needed a lot of skill and luck to get the high scores. Mario was amazing due to its intricate, well thought out level design that made it easy for a new player to understand the mechanics of the game. Tetris was great because of the possibility of it never ending if only you were good enough to make it happen. Even on a handheld device with no internet connection, you still had yourself to beat and ou are better at the game today than you were yesterday. A game that people played so much they start seeing the game in real life.
+
 \subsection{Front End}
+The front end of the program will run on the windows platform using UWP and built using Unity. The user will be able to select either a touch screen control or a keyboard control scheme.
+
+
 \subsection{In-Game Menus}
+The first screen the user will be able to see is the login screen, If the user likes they can create an account with a link from this screen.
+On the account creation screen, the user can add a user name and must enter a password twice. Then have an option to submit the information to have it verified. As a point there will be no in game pause screen, when the player has failed the level or died, they will be presented with a screen that will ask if they want to restart or quit, along with information about their score, if this is their best score, it will be added to a leader-board that is stored on a Firebase database and they will be shown the top 10 players and their own position in that list.
+
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\linewidth]{loginscreen}
+\end{minipage} \hfill
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\linewidth]{createaccount}
+\end{minipage} \hfill
+
 \subsection{Control Mechanisms}
+The user will be able to select either a touch screen control or a keyboard control scheme.
+ 
 \subsection{The Game}
 \section{Game Mechanics}
 \section{System Compatibility}
+The game will be compatible with any system windows UWP can run on. As it is a Unity project it could be compiled for many other systems, but for the moment I will stay with the systems that the project requires.
+
 \section{Hardware Functions Used}
+The hardawre being used will definitely include a Touch screen device and use touch controls for the game, however it will not be mandatory.
+
 \section{Conclusion}
 \section{References and Sources}
 
