@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Character : MonoBehaviour {
 
+    [SerializeField]
+    private float Speed = 10f;
+
     // Use this for initialization
     void Start () {
-
         //Add RigidBody
         gameObject.AddComponent<Rigidbody>();
         //Add a boxCollider
@@ -31,12 +33,12 @@ public class Character : MonoBehaviour {
         //Move Right
         if (Input.GetKey("d") || Input.GetKey("right"))
         {
-            transform.Translate(Vector3.right * Time.deltaTime*10, Space.World);
+            transform.Translate(Vector3.right * Time.deltaTime*Speed, Space.World);
         }
         //Move Left
         if (Input.GetKey("a") || Input.GetKey("left"))
         {
-            transform.Translate(Vector3.left * Time.deltaTime*10, Space.World);
+            transform.Translate(Vector3.left * Time.deltaTime*Speed, Space.World);
         }
 
     }

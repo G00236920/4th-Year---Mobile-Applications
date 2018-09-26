@@ -4,40 +4,39 @@
 \contentsline {subsubsection}{\numberline {2.1.1}Architects}{4}
 \contentsline {subsubsection}{\numberline {2.1.2}Logicians}{4}
 \contentsline {subsubsection}{\numberline {2.1.3}Commanders}{4}
-\contentsline {subsubsection}{\numberline {2.1.4}Debaters}{4}
-\contentsline {subsection}{\numberline {2.2}Diplomats}{4}
-\contentsline {subsubsection}{\numberline {2.2.1}Advocates}{4}
-\contentsline {subsubsection}{\numberline {2.2.2}Mediators}{4}
-\contentsline {subsubsection}{\numberline {2.2.3}Protagonists}{4}
-\contentsline {subsubsection}{\numberline {2.2.4}Campaigners}{4}
-\contentsline {subsection}{\numberline {2.3}Sentinels}{4}
-\contentsline {subsubsection}{\numberline {2.3.1}Logisticians}{4}
-\contentsline {subsubsection}{\numberline {2.3.2}Defenders}{4}
-\contentsline {subsubsection}{\numberline {2.3.3}Executives}{4}
-\contentsline {subsubsection}{\numberline {2.3.4}Consuls}{4}
-\contentsline {subsection}{\numberline {2.4}Explorers}{4}
-\contentsline {subsubsection}{\numberline {2.4.1}Virtuosos}{4}
-\contentsline {subsubsection}{\numberline {2.4.2}Adventurers}{4}
-\contentsline {subsubsection}{\numberline {2.4.3}Entrepreneurs}{4}
-\contentsline {subsubsection}{\numberline {2.4.4}Entertainers}{4}
-\contentsline {section}{\numberline {3}Game Design Research}{5}
-\contentsline {subsection}{\numberline {3.1}Shooter Games}{5}
-\contentsline {subsubsection}{\numberline {3.1.1}Defender(1981)}{5}
-\contentsline {subsection}{\numberline {3.2}Platform Games}{6}
-\contentsline {subsubsection}{\numberline {3.2.1}Donkey Kong(1981)}{6}
-\contentsline {subsubsection}{\numberline {3.2.2}Super Mario Bros.(1985)}{7}
-\contentsline {subsection}{\numberline {3.3}Puzzle Games}{8}
-\contentsline {subsubsection}{\numberline {3.3.1}Tetris(1984)}{8}
-\contentsline {subsection}{\numberline {3.4}Traditional Games}{9}
-\contentsline {subsubsection}{\numberline {3.4.1}BattleChess(1988)}{9}
-\contentsline {subsection}{\numberline {3.5}Research Conclusion}{9}
-\contentsline {section}{\numberline {4}Design}{10}
-\contentsline {subsection}{\numberline {4.1}Front End}{10}
-\contentsline {subsection}{\numberline {4.2}In-Game Menus}{10}
-\contentsline {subsection}{\numberline {4.3}Control Mechanisms}{11}
-\contentsline {subsection}{\numberline {4.4}The Game}{11}
-\contentsline {section}{\numberline {5}Game Mechanics}{11}
-\contentsline {section}{\numberline {6}System Compatibility}{11}
-\contentsline {section}{\numberline {7}Hardware Functions Used}{12}
-\contentsline {section}{\numberline {8}Conclusion}{12}
-\contentsline {section}{\numberline {9}References and Sources}{12}
+\contentsline {subsubsection}{\numberline {2.1.4}Debaters}{5}
+\contentsline {subsection}{\numberline {2.2}Diplomats}{5}
+\contentsline {subsubsection}{\numberline {2.2.1}Advocates}{5}
+\contentsline {subsubsection}{\numberline {2.2.2}Mediators}{5}
+\contentsline {subsubsection}{\numberline {2.2.3}Protagonists}{6}
+\contentsline {subsubsection}{\numberline {2.2.4}Campaigners}{6}
+\contentsline {subsection}{\numberline {2.3}Sentinels}{6}
+\contentsline {subsubsection}{\numberline {2.3.1}Logisticians}{6}
+\contentsline {subsubsection}{\numberline {2.3.2}Defenders}{7}
+\contentsline {subsubsection}{\numberline {2.3.3}Executives}{7}
+\contentsline {subsubsection}{\numberline {2.3.4}Consuls}{7}
+\contentsline {subsection}{\numberline {2.4}Explorers}{7}
+\contentsline {subsubsection}{\numberline {2.4.1}Virtuosos}{7}
+\contentsline {subsubsection}{\numberline {2.4.2}Adventurers}{8}
+\contentsline {subsubsection}{\numberline {2.4.3}Entrepreneurs}{8}
+\contentsline {subsubsection}{\numberline {2.4.4}Entertainers}{8}
+\contentsline {section}{\numberline {3}Game Design Research}{9}
+\contentsline {subsection}{\numberline {3.1}Shooter Games}{9}
+\contentsline {subsubsection}{\numberline {3.1.1}Defender(1981)}{9}
+\contentsline {subsection}{\numberline {3.2}Platform Games}{10}
+\contentsline {subsubsection}{\numberline {3.2.1}Donkey Kong(1981)}{10}
+\contentsline {subsubsection}{\numberline {3.2.2}Super Mario Bros.(1985)}{11}
+\contentsline {subsection}{\numberline {3.3}Puzzle Games}{12}
+\contentsline {subsubsection}{\numberline {3.3.1}Tetris(1984)}{12}
+\contentsline {subsection}{\numberline {3.4}Traditional Games}{13}
+\contentsline {subsubsection}{\numberline {3.4.1}BattleChess(1988)}{13}
+\contentsline {subsection}{\numberline {3.5}Research Conclusion}{13}
+\contentsline {section}{\numberline {4}Design}{14}
+\contentsline {subsection}{\numberline {4.1}Front End}{14}
+\contentsline {subsection}{\numberline {4.2}In-Game Menus}{14}
+\contentsline {subsection}{\numberline {4.3}Control Mechanisms}{15}
+\contentsline {section}{\numberline {5}Game Mechanic}{16}
+\contentsline {section}{\numberline {6}System Compatibility}{17}
+\contentsline {section}{\numberline {7}Hardware Functions Used}{17}
+\contentsline {section}{\numberline {8}Conclusion}{17}
+\contentsline {section}{\numberline {9}References and Sources}{17}
