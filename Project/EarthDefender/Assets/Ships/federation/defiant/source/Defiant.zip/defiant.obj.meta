@@ -1,0 +1,130 @@
+fileFormatVersion: 2
+guid: 93b762fe421ad7345be0e785b54a79f5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: default
+    100002: //RootNode
+    400000: default
+    400002: //RootNode
+    2100000: akmainmat
+    2100002: akmainmat_detop2.jpg
+    2100004: akmainmat_degold.jpg
+    2100006: akmainmat_degrey02.jpg
+    2100008: akmainmat_NONE
+    2100010: akmainmat_deback1.jpg
+    2100012: akmainmat_defront.jpg
+    2100014: akmainmat_degrey03.jpg
+    2100016: akmainmat_degrey04.jpg
+    2100018: akmainmat_dered01.jpg
+    2100020: dewhitemat
+    2100022: deredmat
+    2100024: akmainmat_debottom1.jpg
+    2100026: akmainmat_debottom3.jpg
+    2100028: akmainmat_debottom2.jpg
+    2100030: deyellowmat
+    2100032: None
+    2100034: akmainmat_degreen1.jpg
+    2100036: akmainmat_degreen2.jpg
+    2100038: akmainmat_dewhite.jpg
+    2100040: akmainmat_deyellow.jpg
+    2100042: akmainmat_deorange.jpg
+    2100044: None_NONE
+    2100046: akmainmat_degreen.jpg
+    2100048: akmainmat_debottom4.jpg
+    2100050: akmainmat_detop1.jpg
+    2100052: akmainmat_deblack.jpg
+    2100054: akmainmat_deside2.jpg
+    2100056: akmainmat_deside4.jpg
+    2100058: akmainmat_detop.jpg
+    2100060: akmainmat_deside0.jpg
+    2100062: akmainmat_deside1.jpg
+    2100064: deredmat_dered.jpg
+    2100066: akmainmat_dered.jpg
+    2300000: default
+    3300000: default
+    4300000: default
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

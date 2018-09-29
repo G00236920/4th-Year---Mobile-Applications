@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 70905a86d90bcef4a9ecdfd254b5b661
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Box15
+    100002: Box16
+    100004: Line01
+    100006: Line03
+    100008: Line60
+    100010: Line61
+    100012: Line62
+    100014: Line63
+    100016: Line64
+    100018: Line66
+    100020: Line70
+    100022: Line73
+    100024: Line78
+    100026: Line79
+    100028: Line80
+    100030: Line81
+    100032: Line82
+    100034: SBD_wing
+    100036: SBD_wing01
+    100038: //RootNode
+    400000: Box15
+    400002: Box16
+    400004: Line01
+    400006: Line03
+    400008: Line60
+    400010: Line61
+    400012: Line62
+    400014: Line63
+    400016: Line64
+    400018: Line66
+    400020: Line70
+    400022: Line73
+    400024: Line78
+    400026: Line79
+    400028: Line80
+    400030: Line81
+    400032: Line82
+    400034: SBD_wing
+    400036: SBD_wing01
+    400038: //RootNode
+    2100000: RCX_1_4
+    2100002: RCX_1_2
+    2100004: RCX_1_1
+    2100006: RCX_1_3
+    2300000: Box15
+    2300002: Box16
+    2300004: Line01
+    2300006: Line03
+    2300008: Line60
+    2300010: Line61
+    2300012: Line62
+    2300014: Line63
+    2300016: Line64
+    2300018: Line66
+    2300020: Line70
+    2300022: Line73
+    2300024: Line78
+    2300026: Line79
+    2300028: Line80
+    2300030: Line81
+    2300032: Line82
+    2300034: SBD_wing
+    2300036: SBD_wing01
+    3300000: Box15
+    3300002: Box16
+    3300004: Line01
+    3300006: Line03
+    3300008: Line60
+    3300010: Line61
+    3300012: Line62
+    3300014: Line63
+    3300016: Line64
+    3300018: Line66
+    3300020: Line70
+    3300022: Line73
+    3300024: Line78
+    3300026: Line79
+    3300028: Line80
+    3300030: Line81
+    3300032: Line82
+    3300034: SBD_wing
+    3300036: SBD_wing01
+    4300000: SBD_wing
+    4300002: Line60
+    4300004: Line61
+    4300006: Line62
+    4300008: Line63
+    4300010: Box15
+    4300012: Line64
+    4300014: Line66
+    4300016: Line01
+    4300018: Line03
+    4300020: Line70
+    4300022: Line73
+    4300024: SBD_wing01
+    4300026: Line78
+    4300028: Line79
+    4300030: Line80
+    4300032: Line81
+    4300034: Box16
+    4300036: Line82
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
