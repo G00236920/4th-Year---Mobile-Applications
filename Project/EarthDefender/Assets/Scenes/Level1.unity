@@ -450,10 +450,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1972214267}
+  - component: {fileID: 1972214268}
   - component: {fileID: 1972214266}
   - component: {fileID: 1972214265}
   - component: {fileID: 1972214264}
-  - component: {fileID: 1972214268}
   m_Layer: 0
   m_Name: PlayerObject
   m_TagString: Untagged
@@ -469,7 +469,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1972214263}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fb31de9268415c44a1f372b1f957baf, type: 3}
+  m_Script: {fileID: 11500000, guid: 016834090e1140249b9dc0b61cfe9713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1972214265
@@ -491,7 +491,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1972214263}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 016834090e1140249b9dc0b61cfe9713, type: 3}
+  m_Script: {fileID: 11500000, guid: 0fb31de9268415c44a1f372b1f957baf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1972214267
@@ -519,3 +519,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ab842f22ca011e4d90e4dd3d7581213, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Phaser: {fileID: 1009854311745950, guid: 9eaeca4165f66874bb50ffbd36ff77b1, type: 2}
+  Torpedo: {fileID: 1662621562680532, guid: ee257a27c6c639748bcc8103899578db, type: 2}

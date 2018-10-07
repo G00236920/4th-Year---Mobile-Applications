@@ -52,9 +52,14 @@ public class KeyboardControls : MonoBehaviour {
             Phys.Stop();
         }
 
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            
+            Phys.Fire();
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            Phys.ChangeWeaponType();
         }
 
     }
