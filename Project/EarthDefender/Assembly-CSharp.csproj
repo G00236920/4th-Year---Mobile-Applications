@@ -59,6 +59,7 @@
      <Compile Include="Assets\_scripts\PlayerScripts\KeyboardControls.cs" />
      <Compile Include="Assets\_scripts\PlayerScripts\PlayerPhysics.cs" />
      <Compile Include="Assets\_scripts\SceneSwitch.cs" />
+     <Compile Include="Assets\_scripts\ScrollUV.cs" />
      <Compile Include="Assets\_scripts\WeaponScripts\PhaserScript.cs" />
      <Compile Include="Assets\_scripts\WeaponScripts\TorpedoScript.cs" />
  <Reference Include="UnityEditor.StandardEvents">
