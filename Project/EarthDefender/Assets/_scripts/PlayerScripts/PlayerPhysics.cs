@@ -56,10 +56,10 @@ public class PlayerPhysics : MonoBehaviour {
 
 
         switch(WeaponType.name){
-            case "Phaser":
+            case "PlayerPhaser":
                 FirePhaser();
             break;
-            case "Torpedo":
+            case "PlayerTorpedo":
                 FireTorpedo();
             break;
         }
@@ -69,10 +69,10 @@ public class PlayerPhysics : MonoBehaviour {
     public void ChangeWeaponType(){
 
         switch(WeaponType.name){
-            case "Phaser":
+            case "PlayerPhaser":
                 WeaponType = Torpedo;
             break;
-            case "Torpedo":
+            case "PlayerTorpedo":
                 WeaponType = Phaser;
             break;
         }

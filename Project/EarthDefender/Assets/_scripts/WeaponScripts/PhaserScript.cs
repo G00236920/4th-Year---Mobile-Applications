@@ -14,6 +14,17 @@ public class PhaserScript : MonoBehaviour {
 	void Start () {
 
 		rb = transform.gameObject.AddComponent<Rigidbody>();
+		gameObject.AddComponent<TrailRenderer>();
+
+		gameObject.GetComponent<Renderer>().material.color = new Color(255,0,0,.1f);
+
+		TrailRenderer trail = gameObject.GetComponent<TrailRenderer>();
+
+		trail.widthMultiplier =  .04f;
+		trail.material.SetColor("_Color", new Color(255,0,0, .02f));
+		trail.material.SetColor("_TintColor", new Color(0,0,0,.02f));
+		trail.time = .08f ;
+		
 		rb.useGravity = false;
 
 	}
@@ -28,4 +39,15 @@ public class PhaserScript : MonoBehaviour {
 		rb.AddForce(transform.up *  Time.deltaTime * thrust, ForceMode.Impulse);
 
 	}
+
+	void OnCollisionEnter(Collision collision)
+    {
+		if(collision.gameObject.name == gameObject.name){
+			return;
+		}
+		Destroy(collision.collider.gameObject);
+		Destroy(gameObject);
+
+    }
+
 }
