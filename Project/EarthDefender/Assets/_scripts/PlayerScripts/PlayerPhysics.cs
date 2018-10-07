@@ -6,50 +6,26 @@ public class PlayerPhysics : MonoBehaviour {
 
     public GameObject Phaser;
     public GameObject Torpedo;
-
     [SerializeField]
-    private readonly float Thrust = 100;
+    private readonly float Thrust = 10;
     private GameObject WeaponType;
-
     private Rigidbody rb;
 
     void Start()
     {
         rb = transform.GetChild(0).gameObject.AddComponent<Rigidbody>();
         rb.useGravity = false;
-        rb.mass = 1;
-
         WeaponType = Phaser;
     }
 
-    private void FixedUpdate()
+    void FixedUpdate ()
     {
+        float moveHorizontal = Input.GetAxis ("Horizontal");
+        float moveVertical = Input.GetAxis ("Vertical");
 
-    }
+        Vector3 movement = new Vector3 (moveHorizontal, moveVertical, 0.0f);
 
-    public void MoveForward()
-    {
-        rb.AddForce(Vector3.up *  Time.deltaTime * Thrust, ForceMode.Impulse);
-    }
-
-    public void MoveBackward()
-    {
-        rb.AddForce(Vector3.down *  Time.deltaTime * Thrust, ForceMode.Impulse);
-    }
-
-    public void MoveLeft()
-    {
-        rb.AddForce(Vector3.left *  Time.deltaTime * Thrust, ForceMode.Impulse);
-    }
-
-    public void MoveRight()
-    {
-        rb.AddForce(Vector3.right *  Time.deltaTime * Thrust, ForceMode.Impulse);
-    }
-
-    public void Stop()
-    {
-        rb.velocity = Vector3.zero;
+        rb.AddForce (movement * Thrust);
     }
 
     public void Fire(){

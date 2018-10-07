@@ -45,6 +45,7 @@ public class PhaserScript : MonoBehaviour {
 		if(collision.gameObject.name == gameObject.name){
 			return;
 		}
+
 		Destroy(collision.collider.gameObject);
 		Destroy(gameObject);
 

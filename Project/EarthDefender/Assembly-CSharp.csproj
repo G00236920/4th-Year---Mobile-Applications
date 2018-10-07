@@ -53,13 +53,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\_scripts\PlayArea.cs" />
+     <Compile Include="Assets\_scripts\GameFeatures\PlayArea.cs" />
+     <Compile Include="Assets\_scripts\GameFeatures\SceneSwitch.cs" />
+     <Compile Include="Assets\_scripts\GameFeatures\ScrollUV.cs" />
      <Compile Include="Assets\_scripts\PlayerScripts\AccelerometerControls.cs" />
      <Compile Include="Assets\_scripts\PlayerScripts\ControllerControls.cs" />
      <Compile Include="Assets\_scripts\PlayerScripts\KeyboardControls.cs" />
      <Compile Include="Assets\_scripts\PlayerScripts\PlayerPhysics.cs" />
-     <Compile Include="Assets\_scripts\SceneSwitch.cs" />
-     <Compile Include="Assets\_scripts\ScrollUV.cs" />
      <Compile Include="Assets\_scripts\WeaponScripts\PhaserScript.cs" />
      <Compile Include="Assets\_scripts\WeaponScripts\TorpedoScript.cs" />
  <Reference Include="UnityEditor.StandardEvents">
