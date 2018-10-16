@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour {
 
-	public AudioClip backgroundMusic;
+
+	public AudioClip MenuMusic;
+	public AudioClip level1;
 	public AudioClip beam;
 	public AudioClip torpedo;
-	public AudioClip destoryed;
+	public AudioClip destroyed;
 	private static SoundManager _instance;
+	private static AudioClip currentClip;
 
     public static SoundManager Instance { get { return _instance; } }
 
@@ -21,6 +24,8 @@ public class SoundManager : MonoBehaviour {
 	private void Awake()
     {
 
+		DontDestroyOnLoad(gameObject);
+
         if (_instance != null && _instance != this)
         {
             Destroy(this.gameObject);
@@ -28,7 +33,7 @@ public class SoundManager : MonoBehaviour {
             _instance = this;
         }
 
-		PlayMusic(backgroundMusic);
+		PlayMusic(MenuMusic);
 		
     }
 
@@ -40,10 +45,11 @@ public class SoundManager : MonoBehaviour {
 
 	public void PlayMusic(AudioClip clip)
 	{
+		currentClip = clip;
+
 		MusicSource.clip = clip;
 
 		MusicSource.Play();
-		
 
 	}
 
@@ -54,7 +60,7 @@ public class SoundManager : MonoBehaviour {
 		}
 		else{
 			
-			PlayMusic(backgroundMusic);
+			PlayMusic(currentClip);
 
 		}
 

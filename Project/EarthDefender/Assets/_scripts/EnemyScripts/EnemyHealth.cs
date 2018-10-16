@@ -19,7 +19,8 @@ public class EnemyHealth : MonoBehaviour {
 
 		if(health <= 0){
 
-			SoundManager.Instance.Play(SoundManager.Instance.destoryed);
+			SoundManager.Instance.Play(SoundManager.Instance.destroyed);
+			ScoreKeeper.Instance.score += pointValue;
 			Destroy(gameObject);
 
 		}

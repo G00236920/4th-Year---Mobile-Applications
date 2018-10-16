@@ -58,6 +58,7 @@
      <Compile Include="Assets\_scripts\EnemyScripts\WaypointFollower.cs" />
      <Compile Include="Assets\_scripts\GameFeatures\PlayArea.cs" />
      <Compile Include="Assets\_scripts\GameFeatures\SceneSwitch.cs" />
+     <Compile Include="Assets\_scripts\GameFeatures\ScoreKeeper.cs" />
      <Compile Include="Assets\_scripts\GameFeatures\ScrollUV.cs" />
      <Compile Include="Assets\_scripts\GameFeatures\SoundManager.cs" />
      <Compile Include="Assets\_scripts\PlayerScripts\AccelerometerControls.cs" />
