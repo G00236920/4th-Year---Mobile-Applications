@@ -15,6 +15,7 @@ public class PlayerPhysics : MonoBehaviour {
     {
         rb = transform.GetChild(0).gameObject.AddComponent<Rigidbody>();
         rb.useGravity = false;
+        rb.freezeRotation = true;
         WeaponType = Phaser;
     }
 
@@ -26,6 +27,16 @@ public class PlayerPhysics : MonoBehaviour {
         Vector3 movement = new Vector3 (moveHorizontal, moveVertical, 0.0f);
 
         rb.AddForce (movement * Thrust);
+    }
+
+    void Update(){
+        
+     Vector3 pos = transform.GetChild(0).position;
+
+     pos.z = 0;
+
+     transform.GetChild(0).position = pos;
+
     }
 
     public void Fire(){

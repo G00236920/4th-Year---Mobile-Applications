@@ -27,6 +27,8 @@ public class PhaserScript : MonoBehaviour {
 		
 		rb.useGravity = false;
 
+		SoundManager.Instance.Play(SoundManager.Instance.beam);
+	
 	}
 
 	void Update(){
@@ -45,9 +47,17 @@ public class PhaserScript : MonoBehaviour {
 		if(collision.gameObject.name == gameObject.name){
 			return;
 		}
+		if(collision.gameObject.name.Contains("Enemy")){
 
-		Destroy(collision.collider.gameObject);
-		Destroy(gameObject);
+			//Destroy(collision.collider.gameObject);
+			int health = collision.collider.gameObject.GetComponent<EnemyHealth>().health;
+			int damage = collision.collider.gameObject.GetComponent<EnemyHealth>().damagePerHitTaken/2;
+
+			collision.collider.gameObject.GetComponent<EnemyHealth>().health = health - damage;
+
+			Destroy(gameObject);
+
+		}
 
     }
 

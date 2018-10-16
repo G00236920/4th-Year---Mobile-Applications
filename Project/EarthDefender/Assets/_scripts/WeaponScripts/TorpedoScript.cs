@@ -26,6 +26,8 @@ public class TorpedoScript : MonoBehaviour {
 		
 		rb.useGravity = false;
 
+		SoundManager.Instance.Play(SoundManager.Instance.torpedo);
+
 	}
 
 	void Update(){
@@ -44,8 +46,20 @@ public class TorpedoScript : MonoBehaviour {
 		if(collision.gameObject.name == gameObject.name){
 			return;
 		}
-		Destroy(collision.collider.gameObject);
-		Destroy(gameObject);
+		if(collision.gameObject.name == gameObject.name){
+			return;
+		}
+		if(collision.gameObject.name.Contains("Enemy")){
+
+			//Destroy(collision.collider.gameObject);
+			int health = collision.collider.gameObject.GetComponent<EnemyHealth>().health;
+			int damage = collision.collider.gameObject.GetComponent<EnemyHealth>().damagePerHitTaken;
+
+			collision.collider.gameObject.GetComponent<EnemyHealth>().health = health - damage;
+
+			Destroy(gameObject);
+			
+		}
 
     }
 
