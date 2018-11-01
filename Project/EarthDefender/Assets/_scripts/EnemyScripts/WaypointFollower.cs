@@ -32,10 +32,10 @@ public float Speed { get { return speed; } set { speed = value; } }
 	}
 
 	void Update(){
-		    
-     Vector3 pos = transform.position;
-     pos.z = 0;
-     transform.position = pos;
+				
+		Vector3 pos = transform.position;
+		pos.z = 0;
+		transform.position = pos;
 
 	}
 

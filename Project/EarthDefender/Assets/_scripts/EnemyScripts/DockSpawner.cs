@@ -38,16 +38,22 @@ public class DockSpawner : MonoBehaviour {
 
 	private void Spawn(){
 
-		var enemy = Instantiate(enemPrefab, enemyParent.transform);
-		enemy.transform.position = transform.position;
+		if( (GameRules.Instance.enemiesToSpawn > 0) && (GameRules.Instance.maxEnemies > GameRules.Instance.enemiesAlive) ){
+			
+			var enemy = Instantiate(enemPrefab, enemyParent.transform);
+			enemy.transform.position = transform.position;
 
-		var follower = enemy.GetComponent<WaypointFollower>();
-		follower.Speed = enemyStartSpeed;
+			var follower = enemy.GetComponent<WaypointFollower>();
+			follower.Speed = enemyStartSpeed;
 
-		foreach(var waypoint in waypoints){
+			foreach(var waypoint in waypoints){
 
-			follower.AddPointsToFollow(waypoint.position);
+				follower.AddPointsToFollow(waypoint.position);
 
+			}
+
+			GameRules.Instance.enemiesToSpawn -= 1;
+			GameRules.Instance.enemiesAlive += 1;
 		}
 
 	}
