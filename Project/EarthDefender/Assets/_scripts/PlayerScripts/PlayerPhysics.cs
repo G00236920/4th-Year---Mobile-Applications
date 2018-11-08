@@ -26,7 +26,8 @@ public class PlayerPhysics : MonoBehaviour {
 
         Vector3 movement = new Vector3 (moveHorizontal, moveVertical, 0.0f);
 
-        rb.AddForce (movement * Thrust);
+        rb.AddForce (movement * Thrust, ForceMode.VelocityChange);
+
     }
 
     void Update(){
