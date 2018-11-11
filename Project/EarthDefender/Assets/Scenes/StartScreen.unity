@@ -377,6 +377,7 @@ MonoBehaviour:
   beam: {fileID: 8300000, guid: 1183eb1753654c64cad63e3d4c648f89, type: 3}
   torpedo: {fileID: 8300000, guid: ceee5c0028f63da49b058aba73a0c6ee, type: 3}
   destroyed: {fileID: 8300000, guid: 392286d16a882da428d9e3cb69d4abf4, type: 3}
+  boss: {fileID: 8300000, guid: 107e962d3bbcd89439b7c0646eac0d1d, type: 3}
   EffectsSource: {fileID: 1342248946}
   MusicSource: {fileID: 916182926}
 --- !u!4 &232318845
@@ -1385,6 +1386,7 @@ MonoBehaviour:
   enemiesToSpawn: 9
   maxEnemies: 2
   enemiesAlive: 0
+  torpUnlocked: 0
 --- !u!1 &916182925
 GameObject:
   m_ObjectHideFlags: 0

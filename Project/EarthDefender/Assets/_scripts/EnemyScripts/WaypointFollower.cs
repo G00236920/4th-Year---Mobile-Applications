@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class WaypointFollower : MonoBehaviour {
 
-private IList<Vector3> waypoints = new List<Vector3>();
 private Vector3 currentWaypoint;
 private float speed;
 private Rigidbody rb;
@@ -13,7 +12,7 @@ private Rigidbody rb;
 public float Speed { get { return speed; } set { speed = value; } }
 
 	private void Start(){
-
+		
 		rb = GetComponent<Rigidbody>();
 		rb.freezeRotation = true;
 		rb.isKinematic = true;
@@ -24,11 +23,7 @@ public float Speed { get { return speed; } set { speed = value; } }
 
 	private void FixedUpdate(){
 
-		if(HasMorePoints()) {
-
-			Move();
-
-		}
+		Move();
 
 	}
 
@@ -42,11 +37,9 @@ public float Speed { get { return speed; } set { speed = value; } }
 
 	private void NextPointToFollow(){
 
-		if(HasMorePoints()) {
-
-			currentWaypoint = waypoints.First();
-
-		}
+		List<Transform> points = WayPoints.Instance.getPoints();
+		points = points.OrderBy( x => Random.value ).ToList();
+		currentWaypoint = points.First().position;
 
 	}
 
@@ -58,27 +51,9 @@ public float Speed { get { return speed; } set { speed = value; } }
 
 			rb.position = new Vector2(currentWaypoint.x, currentWaypoint.y);
 
-			waypoints.Remove(currentWaypoint);
-
-			if(HasMorePoints()) {
-
-				NextPointToFollow();
-
-			}
+			NextPointToFollow();
 
 		}
-
-	}
-
-	private bool HasMorePoints(){
-
-		return waypoints.Count != 0;
-
-	}
-
-	public void AddPointsToFollow(Vector3 point){
-
-		waypoints.Add(point);
 
 	}
 

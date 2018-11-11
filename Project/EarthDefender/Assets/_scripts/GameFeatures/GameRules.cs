@@ -9,7 +9,7 @@ public class GameRules : MonoBehaviour {
 	public int enemiesToSpawn = 9;
 	public int maxEnemies = 2;
 	public int enemiesAlive = 0;
-	public bool tropUnlocked = false;
+	public bool torpUnlocked = false;
 
 	// Use this for initialization
 	void Start () {
@@ -23,8 +23,4 @@ public class GameRules : MonoBehaviour {
         }
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

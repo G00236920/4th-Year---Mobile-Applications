@@ -8,16 +8,11 @@ public class DockSpawner : MonoBehaviour {
 	private const string SPAWN_METHOD = "Spawn";
 
 	[SerializeField]
-	[Header("Number of Points")]
-	private Transform[] waypoints;
-	[SerializeField]
 	private float spawnDelay = .2f;
 	[SerializeField]
 	private float spawnInterval = 1.3f;
 	[SerializeField]
-	private float enemyStartSpeed = .2f;
-	[SerializeField]
-
+	private float enemyStartSpeed = 1f;
 	public GameObject Enemyd5;
 	public GameObject Enemyktinga;
 	public GameObject EnemyKvek;
@@ -54,6 +49,7 @@ public class DockSpawner : MonoBehaviour {
 		if(GameRules.Instance.enemiesToSpawn == 0){
 
 			enemyChoice = Enemyneghvar;
+			SoundManager.Instance.PlayMusic(SoundManager.Instance.boss);
 			spawnEnemies(enemyChoice);
 		}
 
@@ -91,15 +87,8 @@ public class DockSpawner : MonoBehaviour {
 			
 			follower.Speed = enemyStartSpeed;
 
-			foreach(var waypoint in waypoints){
-
-				follower.AddPointsToFollow(waypoint.position);
-
-			}
-
 			GameRules.Instance.enemiesToSpawn -= 1;
 			GameRules.Instance.enemiesAlive += 1;
 	}
-
 
 }
