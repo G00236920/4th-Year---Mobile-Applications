@@ -9,11 +9,30 @@ public class SceneSwitch : MonoBehaviour {
     public GameObject AudioMenu;
     public GameObject HelpMenu;
     public GameObject MainMenu;
+    private static SceneSwitch _instance;
+    public static SceneSwitch Instance { get { return _instance; } }
 
+	private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        } else {
+            _instance = this;
+        }
+    }
+    
     public void PlayGame()
     {
         SceneManager.LoadScene("Level1", LoadSceneMode.Single);
         SoundManager.Instance.PlayMusic(SoundManager.Instance.level1);
+    }
+    public void Transition()
+    {
+        SceneManager.LoadScene("Transition", LoadSceneMode.Single);
+        SoundManager.Instance.PlayMusic(SoundManager.Instance.MenuMusic);
     }
 
     public void Help(){

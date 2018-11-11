@@ -378,6 +378,7 @@ MonoBehaviour:
   torpedo: {fileID: 8300000, guid: ceee5c0028f63da49b058aba73a0c6ee, type: 3}
   destroyed: {fileID: 8300000, guid: 392286d16a882da428d9e3cb69d4abf4, type: 3}
   boss: {fileID: 8300000, guid: 107e962d3bbcd89439b7c0646eac0d1d, type: 3}
+  victory: {fileID: 8300000, guid: 30a2cffbe6fafb04881e0fad80f83316, type: 3}
   EffectsSource: {fileID: 1342248946}
   MusicSource: {fileID: 916182926}
 --- !u!4 &232318845
@@ -3087,7 +3088,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 7277414f2e8130e449f1517f85b70e2b, type: 2}
     - target: {fileID: 4613160677875508, guid: 109ee534dc490f3439ca859a1168476b, type: 2}
       propertyPath: m_LocalScale.x
-      value: 25
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 4613160677875508, guid: 109ee534dc490f3439ca859a1168476b, type: 2}
       propertyPath: m_LocalScale.y

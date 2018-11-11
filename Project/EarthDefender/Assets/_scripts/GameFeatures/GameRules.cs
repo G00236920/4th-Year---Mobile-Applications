@@ -10,6 +10,12 @@ public class GameRules : MonoBehaviour {
 	public int maxEnemies = 2;
 	public int enemiesAlive = 0;
 	public bool torpUnlocked = false;
+	public bool defUnlocked = false;
+	public bool entUnlocked = false;
+	public GameObject shipChoice;
+	public GameObject prometheus;
+	public GameObject defiant;
+	public GameObject enterprise;
 
 	// Use this for initialization
 	void Start () {

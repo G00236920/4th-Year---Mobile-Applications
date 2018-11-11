@@ -11,6 +11,8 @@ public class SoundManager : MonoBehaviour {
 	public AudioClip torpedo;
 	public AudioClip destroyed;
 	public AudioClip boss;
+	public AudioClip victory;
+
 	private static SoundManager _instance;
 	private static AudioClip currentClip;
 
