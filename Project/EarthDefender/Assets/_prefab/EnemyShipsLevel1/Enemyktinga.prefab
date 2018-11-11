@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 54505071566198830}
   - component: {fileID: 65006229336212284}
   - component: {fileID: 114901776476475386}
+  - component: {fileID: 114263912627965494}
   m_Layer: 0
   m_Name: Enemyktinga
   m_TagString: Untagged
@@ -170,6 +171,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.868389, y: 1, z: 3.840889}
   m_Center: {x: 3.533337, y: 5.8998095e-18, z: -0.010504723}
+--- !u!114 &114263912627965494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1146239687342060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 315ce9b9bec372d4dbb91b990c788b62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114901776476475386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -181,5 +193,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45192b581a5d14f9b82e480c9a9aa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 200
   damagePerHitTaken: 100
+  pointValue: 0

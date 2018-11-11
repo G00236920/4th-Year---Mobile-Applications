@@ -16,6 +16,7 @@ public float Speed { get { return speed; } set { speed = value; } }
 
 		rb = GetComponent<Rigidbody>();
 		rb.freezeRotation = true;
+		rb.isKinematic = true;
 
 		NextPointToFollow();
 

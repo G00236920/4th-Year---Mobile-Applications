@@ -166,7 +166,14 @@ MonoBehaviour:
   spawnDelay: 0.2
   spawnInterval: 1.3
   enemyStartSpeed: 2
-  enemPrefab: {fileID: 1131528766294884, guid: bf65d90740801bb42beeb731b7410988, type: 2}
+  Enemyd5: {fileID: 1131528766294884, guid: bf65d90740801bb42beeb731b7410988, type: 2}
+  Enemyktinga: {fileID: 1146239687342060, guid: 942329d8e12470f439afc8ac077c6732,
+    type: 2}
+  EnemyKvek: {fileID: 1781426443893346, guid: a895a65b6c998da4eb2e777d5f4add5d, type: 2}
+  EnemyVreedex: {fileID: 1779354830552182, guid: 4f7fc0e88a8429e4da4c77d3e376963e,
+    type: 2}
+  Enemyneghvar: {fileID: 1416335422388910, guid: 96a44e54873ecb54c8ccb9fcc2ab7696,
+    type: 2}
 --- !u!1 &257699498
 GameObject:
   m_ObjectHideFlags: 0

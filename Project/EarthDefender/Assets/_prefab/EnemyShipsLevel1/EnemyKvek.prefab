@@ -447,8 +447,9 @@ GameObject:
   - component: {fileID: 54462233697130510}
   - component: {fileID: 65621719840195418}
   - component: {fileID: 114267040053890244}
+  - component: {fileID: 114513017014536842}
   m_Layer: 0
-  m_Name: EnemyK'vek Class
+  m_Name: EnemyKvek
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2426,6 +2427,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b45192b581a5d14f9b82e480c9a9aa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 300
   damagePerHitTaken: 100
   pointValue: 0
+--- !u!114 &114513017014536842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1781426443893346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 315ce9b9bec372d4dbb91b990c788b62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

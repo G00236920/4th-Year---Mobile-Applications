@@ -192,8 +192,9 @@ GameObject:
   - component: {fileID: 54720972888300910}
   - component: {fileID: 65628862467742036}
   - component: {fileID: 114335348096160988}
+  - component: {fileID: 114667466651620700}
   m_Layer: 0
-  m_Name: EnemyVreedex Class
+  m_Name: EnemyVreedex
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1473,3 +1474,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 500
   damagePerHitTaken: 100
+  pointValue: 0
+--- !u!114 &114667466651620700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1779354830552182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 315ce9b9bec372d4dbb91b990c788b62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
