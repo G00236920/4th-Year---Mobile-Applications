@@ -48,8 +48,8 @@ public class PhaserScript : MonoBehaviour {
 			return;
 		}
 		if(collision.gameObject.name.Contains("Enemy")){
-
-			//Destroy(collision.collider.gameObject);
+			
+			flash(collision.gameObject);
 			int health = collision.collider.gameObject.GetComponent<EnemyHealth>().health;
 			int damage = collision.collider.gameObject.GetComponent<EnemyHealth>().damagePerHitTaken/2;
 
@@ -60,5 +60,18 @@ public class PhaserScript : MonoBehaviour {
 		}
 
     }
+
+	 IEnumerator flash(GameObject enemy){
+		Debug.Log("here");
+		int count = 5;
+		 
+		while( count > 0 ){
+			Debug.Log(count);
+			yield return new WaitForSeconds(1);
+			enemy.GetComponent<Renderer>().enabled = false;
+			count--;
+		}
+
+	 }
 
 }

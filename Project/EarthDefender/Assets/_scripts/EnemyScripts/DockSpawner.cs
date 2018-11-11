@@ -13,11 +13,11 @@ public class DockSpawner : MonoBehaviour {
 	private float spawnInterval = 1.3f;
 	[SerializeField]
 	private float enemyStartSpeed = 1f;
-	public GameObject Enemyd5;
-	public GameObject Enemyktinga;
-	public GameObject EnemyKvek;
-	public GameObject EnemyVreedex;
-	public GameObject Enemyneghvar;
+	public GameObject Enemy1;
+	public GameObject Enemy2;
+	public GameObject Enemy3;
+	public GameObject Enemy4;
+	public GameObject Boss;
 	private GameObject enemyParent;
 
 	private void Start(){
@@ -48,7 +48,7 @@ public class DockSpawner : MonoBehaviour {
 		}
 		if(GameRules.Instance.enemiesToSpawn == 0){
 
-			enemyChoice = Enemyneghvar;
+			enemyChoice = Boss;
 			SoundManager.Instance.PlayMusic(SoundManager.Instance.boss);
 			spawnEnemies(enemyChoice);
 		}
@@ -57,20 +57,20 @@ public class DockSpawner : MonoBehaviour {
 
 	private GameObject randomEnemy(){
 
-		GameObject enemyChoice = Enemyd5;
+		GameObject enemyChoice = Enemy1;
 
 		switch((int)Random.Range(1f, 5f)){
 			case 1:
-				enemyChoice = Enemyd5;
+				enemyChoice = Enemy1;
 			break;
 			case 2:
-				enemyChoice = Enemyktinga;
+				enemyChoice = Enemy2;
 			break;
 			case 3:
-				enemyChoice = EnemyKvek;
+				enemyChoice = Enemy3;
 			break;
 			case 4:
-				enemyChoice = EnemyVreedex;
+				enemyChoice = Enemy4;
 			break;
 		}
 

@@ -11,7 +11,6 @@ public class SoundManager : MonoBehaviour {
 	public AudioClip torpedo;
 	public AudioClip destroyed;
 	public AudioClip boss;
-	public AudioClip victory;
 
 	private static SoundManager _instance;
 	private static AudioClip currentClip;
@@ -22,6 +21,8 @@ public class SoundManager : MonoBehaviour {
 	// Audio players components.
 	public AudioSource EffectsSource;
 	public AudioSource MusicSource;
+	public AudioSource EnemySource;
+	
 
 	// Singleton instance.
 	private void Awake()
@@ -44,6 +45,12 @@ public class SoundManager : MonoBehaviour {
 	{
 		EffectsSource.clip = clip;
 		EffectsSource.Play();
+	}
+
+	public void PlayEnemy(AudioClip clip)
+	{
+		EnemySource.clip = clip;
+		EnemySource.Play();
 	}
 
 	public void PlayMusic(AudioClip clip)

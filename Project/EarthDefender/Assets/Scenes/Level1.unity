@@ -162,14 +162,11 @@ MonoBehaviour:
   spawnDelay: 0.2
   spawnInterval: 1.3
   enemyStartSpeed: 2
-  Enemyd5: {fileID: 1131528766294884, guid: bf65d90740801bb42beeb731b7410988, type: 2}
-  Enemyktinga: {fileID: 1146239687342060, guid: 942329d8e12470f439afc8ac077c6732,
-    type: 2}
-  EnemyKvek: {fileID: 1781426443893346, guid: a895a65b6c998da4eb2e777d5f4add5d, type: 2}
-  EnemyVreedex: {fileID: 1779354830552182, guid: 4f7fc0e88a8429e4da4c77d3e376963e,
-    type: 2}
-  Enemyneghvar: {fileID: 1416335422388910, guid: 96a44e54873ecb54c8ccb9fcc2ab7696,
-    type: 2}
+  Enemy1: {fileID: 1131528766294884, guid: bf65d90740801bb42beeb731b7410988, type: 2}
+  Enemy2: {fileID: 1146239687342060, guid: 942329d8e12470f439afc8ac077c6732, type: 2}
+  Enemy3: {fileID: 1781426443893346, guid: a895a65b6c998da4eb2e777d5f4add5d, type: 2}
+  Enemy4: {fileID: 1779354830552182, guid: 4f7fc0e88a8429e4da4c77d3e376963e, type: 2}
+  Boss: {fileID: 1416335422388910, guid: 96a44e54873ecb54c8ccb9fcc2ab7696, type: 2}
 --- !u!114 &111443868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,11 +429,6 @@ Transform:
   m_Father: {fileID: 257699499}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &621497133 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4923211446527042, guid: 8e24a229b04b0cc4b924775389663b8d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1603638910}
 --- !u!1 &658099659
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,51 +458,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 257699499}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &723354066 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1781707648334622, guid: 8e24a229b04b0cc4b924775389663b8d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1603638910}
---- !u!65 &723354067
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 723354066}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.138713, y: 0.9999998, z: 7.057823}
-  m_Center: {x: -0.036496487, y: 2.2075742e-14, z: 1.7521495}
---- !u!1 &789349515
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 789349516}
-  m_Layer: 0
-  m_Name: PointOnPath (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &789349516
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 789349515}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_Children: []
-  m_Father: {fileID: 621497133}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1052697401
 GameObject:
@@ -785,6 +732,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cecf73318af4134408cf911a82767a04, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1124453678 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1282508227921180, guid: cecf73318af4134408cf911a82767a04,
+    type: 2}
+  m_PrefabInternal: {fileID: 1124453677}
 --- !u!1 &1196036954
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,49 +889,6 @@ Transform:
   m_Father: {fileID: 111443866}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1603638910
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1972214267}
-    m_Modifications:
-    - target: {fileID: 4923211446527042, guid: 8e24a229b04b0cc4b924775389663b8d, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -1.4366626
-      objectReference: {fileID: 0}
-    - target: {fileID: 4923211446527042, guid: 8e24a229b04b0cc4b924775389663b8d, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -3.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 4923211446527042, guid: 8e24a229b04b0cc4b924775389663b8d, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4923211446527042, guid: 8e24a229b04b0cc4b924775389663b8d, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4923211446527042, guid: 8e24a229b04b0cc4b924775389663b8d, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4923211446527042, guid: 8e24a229b04b0cc4b924775389663b8d, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4923211446527042, guid: 8e24a229b04b0cc4b924775389663b8d, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4923211446527042, guid: 8e24a229b04b0cc4b924775389663b8d, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 64587227840256428, guid: 8e24a229b04b0cc4b924775389663b8d, type: 2}
-  m_SourcePrefab: {fileID: 100100000, guid: 8e24a229b04b0cc4b924775389663b8d, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1001 &1674553204
 Prefab:
   m_ObjectHideFlags: 0
@@ -1166,10 +1075,9 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1972214263}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.12666261, y: 0.9575672, z: -0.023657417}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 621497133}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1186,3 +1094,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Phaser: {fileID: 1009854311745950, guid: 9eaeca4165f66874bb50ffbd36ff77b1, type: 2}
   Torpedo: {fileID: 1662621562680532, guid: ee257a27c6c639748bcc8103899578db, type: 2}
+  icon: {fileID: 1124453678}
+  beamImage: {fileID: 21300000, guid: dff67fee904f88f40add32f1a2c29dc7, type: 3}
+  torpImage: {fileID: 21300000, guid: e4b25c61458d7c146b46016c88e90214, type: 3}

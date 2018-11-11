@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerPhysics : MonoBehaviour {
 
     public GameObject Phaser;
     public GameObject Torpedo;
+    public GameObject icon;
+    public Sprite beamImage;
+    public Sprite torpImage;
     [SerializeField]
     private readonly float Thrust = 10;
     private GameObject WeaponType;
@@ -13,6 +17,9 @@ public class PlayerPhysics : MonoBehaviour {
 
     void Start()
     {
+        GameObject player = Instantiate(GameRules.Instance.getShip());
+        player.transform.parent = gameObject.transform;
+
         rb = transform.GetChild(0).gameObject.AddComponent<Rigidbody>();
         rb.useGravity = false;
         rb.freezeRotation = true;
@@ -21,6 +28,7 @@ public class PlayerPhysics : MonoBehaviour {
 
     void FixedUpdate ()
     {
+
         float moveHorizontal = Input.GetAxis ("Horizontal");
         float moveVertical = Input.GetAxis ("Vertical");
 
@@ -41,28 +49,31 @@ public class PlayerPhysics : MonoBehaviour {
 
     public void Fire(){
 
-
         switch(WeaponType.name){
             case "PlayerPhaser":
                 FirePhaser();
             break;
             case "PlayerTorpedo":
-                FireTorpedo();
+               FireTorpedo();
             break;
         }
 
     }
 
     public void ChangeWeaponType(){
-
-        switch(WeaponType.name){
-            case "PlayerPhaser":
-                WeaponType = Torpedo;
-            break;
-            case "PlayerTorpedo":
-                WeaponType = Phaser;
-            break;
-        }
+            switch(WeaponType.name){
+                case "PlayerPhaser":
+                    if(GameRules.Instance.getTorp()){
+                        icon.GetComponent<Image>().sprite = torpImage;
+                        WeaponType = Torpedo;   
+                    }
+                break;
+                case "PlayerTorpedo":
+                    icon.GetComponent<Image>().sprite = beamImage;
+                    WeaponType = Phaser;
+                break;
+            }
+        
 
     }
 

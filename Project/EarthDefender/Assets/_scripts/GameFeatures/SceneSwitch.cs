@@ -26,9 +26,19 @@ public class SceneSwitch : MonoBehaviour {
     
     public void PlayGame()
     {
+        GameRules.Instance.enemiesToSpawn = 9;
         SceneManager.LoadScene("Level1", LoadSceneMode.Single);
         SoundManager.Instance.PlayMusic(SoundManager.Instance.level1);
     }
+
+    
+    public void nextLevel()
+    {
+        GameRules.Instance.enemiesToSpawn = 9;
+        SceneManager.LoadScene("Level2", LoadSceneMode.Single);
+        SoundManager.Instance.PlayMusic(SoundManager.Instance.level1);
+    }
+    
     public void Transition()
     {
         SceneManager.LoadScene("Transition", LoadSceneMode.Single);
