@@ -9,7 +9,7 @@ public class EnemyWeapons : MonoBehaviour {
 	// Update is called once per frame
 	void Start(){
 
-		InvokeRepeating("FirePhaser", 0f, 1f);
+		//InvokeRepeating("FirePhaser", 0f, 1f);
 
 	}
 

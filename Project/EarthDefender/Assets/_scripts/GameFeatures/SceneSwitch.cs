@@ -60,4 +60,11 @@ public class SceneSwitch : MonoBehaviour {
         SceneManager.LoadScene("Transition", LoadSceneMode.Single);
         SoundManager.Instance.PlayMusic(SoundManager.Instance.MenuMusic);
     }
+
+    
+    public void Transition2()
+    {
+        SceneManager.LoadScene("Transition2", LoadSceneMode.Single);
+        SoundManager.Instance.PlayMusic(SoundManager.Instance.MenuMusic);
+    }
 }

@@ -233,6 +233,24 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114930655592541468, guid: 9e8487356b564cb4fac49a10d8e7c898,
+        type: 2}
+      propertyPath: Enemy3
+      value: 
+      objectReference: {fileID: 1898958493471122, guid: dd0b3411129bc314bb05aaa096e542a9,
+        type: 2}
+    - target: {fileID: 114930655592541468, guid: 9e8487356b564cb4fac49a10d8e7c898,
+        type: 2}
+      propertyPath: Enemy2
+      value: 
+      objectReference: {fileID: 1927896016243132, guid: 6b1af6ef37bed12468699c81fac1f8af,
+        type: 2}
+    - target: {fileID: 114930655592541468, guid: 9e8487356b564cb4fac49a10d8e7c898,
+        type: 2}
+      propertyPath: Enemy4
+      value: 
+      objectReference: {fileID: 1578687254850496, guid: 3247d94d42959e04c9bb68b5e2278f78,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e8487356b564cb4fac49a10d8e7c898, type: 2}
   m_IsPrefabAsset: 0
@@ -859,6 +877,7 @@ GameObject:
   - component: {fileID: 1972214266}
   - component: {fileID: 1972214265}
   - component: {fileID: 1972214264}
+  - component: {fileID: 1972214269}
   m_Layer: 0
   m_Name: PlayerObject
   m_TagString: Untagged
@@ -928,3 +947,14 @@ MonoBehaviour:
   icon: {fileID: 1124453678}
   beamImage: {fileID: 21300000, guid: dff67fee904f88f40add32f1a2c29dc7, type: 3}
   torpImage: {fileID: 21300000, guid: e4b25c61458d7c146b46016c88e90214, type: 3}
+--- !u!114 &1972214269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1972214263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a49135b71ae0ea498e61585a8468569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

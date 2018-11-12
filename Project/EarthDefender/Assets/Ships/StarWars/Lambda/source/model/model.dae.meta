@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: cb00cbb8f3d6b6d46b64c704109d7e72
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: aie_dessus
+    100002: aile_D_2
+    100004: aile_G_2
+    100006: cockpit
+    100008: cockpit 1
+    100010: corps_2
+    100012: laser_aile_D
+    100014: laser_aile_G
+    100016: laser_corps
+    100018: laser_corps_2
+    100020: //RootNode
+    400000: aie_dessus
+    400002: aile_D_2
+    400004: aile_G_2
+    400006: cockpit
+    400008: cockpit 1
+    400010: corps_2
+    400012: laser_aile_D
+    400014: laser_aile_G
+    400016: laser_corps
+    400018: laser_corps_2
+    400020: //RootNode
+    2100000: laser_aile
+    2100002: aile_bas
+    2100004: aile_dessus
+    2100006: laser_corps
+    2100008: corps
+    2100010: cockpit
+    2100012: vitre
+    2300000: aie_dessus
+    2300002: aile_D_2
+    2300004: aile_G_2
+    2300006: cockpit
+    2300008: cockpit 1
+    2300010: corps_2
+    2300012: laser_aile_D
+    2300014: laser_aile_G
+    2300016: laser_corps
+    2300018: laser_corps_2
+    3300000: aie_dessus
+    3300002: aile_D_2
+    3300004: aile_G_2
+    3300006: cockpit
+    3300008: cockpit 1
+    3300010: corps_2
+    3300012: laser_aile_D
+    3300014: laser_aile_G
+    3300016: laser_corps
+    3300018: laser_corps_2
+    4300000: laser_aile_D
+    4300002: aile_D_2
+    4300004: laser_aile_G
+    4300006: aile_G_2
+    4300008: aie_dessus
+    4300010: laser_corps
+    4300012: laser_corps_2
+    4300014: corps_2
+    4300016: cockpit
+    4300018: cockpit
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

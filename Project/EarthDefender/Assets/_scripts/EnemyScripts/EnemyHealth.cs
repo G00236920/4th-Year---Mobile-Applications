@@ -31,9 +31,9 @@ public class EnemyHealth : MonoBehaviour {
 	}
 
     void OnCollisionEnter(Collision collision) {
-
-		InvokeRepeating("Toggler", 0, .4f);
-
+		if(collision.gameObject.name.Contains("Player")){
+			InvokeRepeating("Toggler", 0, .4f);
+		}
 	}
 
 	void Toggler() {

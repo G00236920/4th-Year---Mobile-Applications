@@ -25,6 +25,7 @@ public class PlayerPhysics : MonoBehaviour {
         player.transform.parent = gameObject.transform;
 
         rb = transform.GetChild(0).gameObject.AddComponent<Rigidbody>();
+        rb.drag = 2F;
         rb.useGravity = false;
         rb.freezeRotation = true;
         WeaponType = Phaser;
@@ -68,13 +69,15 @@ public class PlayerPhysics : MonoBehaviour {
     }
 
     public void Fire(){
-        switch(WeaponType.name){
-            case "PPhaser":
-                FirePhaser();
-            break;
-            case "PTorpedo":
-               FireTorpedo();
-            break;
+        if( transform.childCount != 0){
+            switch(WeaponType.name){
+                case "PPhaser":
+                    FirePhaser();
+                break;
+                case "PTorpedo":
+                FireTorpedo();
+                break;
+            }
         }
 
     }

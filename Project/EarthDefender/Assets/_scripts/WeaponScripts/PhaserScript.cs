@@ -63,6 +63,9 @@ public class PhaserScript : MonoBehaviour {
 			Destroy(gameObject);
 
 		}
+		if(collision.gameObject.name.Contains("Enemy") && !playerWeapon){
+			Destroy(gameObject);
+		}
 		if(collision.gameObject.name.Contains("Player") && !playerWeapon){
 			Destroy(collision.gameObject);
 		}
