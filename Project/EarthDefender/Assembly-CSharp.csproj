@@ -60,6 +60,7 @@
      <Compile Include="Assets\_scripts\EnemyScripts\WaypointFollower.cs" />
      <Compile Include="Assets\_scripts\EnemyScripts\WayPoints.cs" />
      <Compile Include="Assets\_scripts\GameFeatures\GameRules.cs" />
+     <Compile Include="Assets\_scripts\GameFeatures\MenuControl.cs" />
      <Compile Include="Assets\_scripts\GameFeatures\PlayArea.cs" />
      <Compile Include="Assets\_scripts\GameFeatures\SceneSwitch.cs" />
      <Compile Include="Assets\_scripts\GameFeatures\ScoreKeeper.cs" />

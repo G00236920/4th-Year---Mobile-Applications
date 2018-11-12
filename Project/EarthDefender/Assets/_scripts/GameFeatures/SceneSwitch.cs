@@ -6,9 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitch : MonoBehaviour {
 
-    public GameObject AudioMenu;
-    public GameObject HelpMenu;
-    public GameObject MainMenu;
     private static SceneSwitch _instance;
     public static SceneSwitch Instance { get { return _instance; } }
 
@@ -33,7 +30,6 @@ public class SceneSwitch : MonoBehaviour {
         SoundManager.Instance.PlayMusic(SoundManager.Instance.level1);
     }
 
-    
     public void nextLevel()
     {
         GameRules.Instance.enemiesToSpawn = 9;
@@ -44,6 +40,7 @@ public class SceneSwitch : MonoBehaviour {
   
     public void endGame()
     {
+        GameRules.Instance.enemiesToSpawn = 9;
         ScoreKeeper.Instance.reset();
         GameRules.Instance.reset();
         levelCount = 2;
@@ -59,34 +56,5 @@ public class SceneSwitch : MonoBehaviour {
     {
         SceneManager.LoadScene("Transition", LoadSceneMode.Single);
         SoundManager.Instance.PlayMusic(SoundManager.Instance.MenuMusic);
-    }
-
-    public void Help(){
-        MainMenu.SetActive(false);
-        HelpMenu.SetActive(true);
-    }
-
-    public void AudioOptions()
-    {
-        MainMenu.SetActive(false);
-        AudioMenu.SetActive(true);
-    }
-
-    
-    public void Back()
-    {
-        if(AudioMenu){
-            AudioMenu.SetActive(false);
-        }
-        if(HelpMenu){
-            HelpMenu.SetActive(false);
-        }
-
-        MainMenu.SetActive(true);
-    }
-
-    public void Quit()
-    {
-        Application.Quit();
     }
 }
