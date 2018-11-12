@@ -3,7 +3,12 @@ guid: 3bb0824ae42007c47a9304d0a0f1f4f8
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Enemy1: {fileID: 1131528766294884, guid: bf65d90740801bb42beeb731b7410988, type: 2}
+  - Enemy2: {fileID: 1146239687342060, guid: 942329d8e12470f439afc8ac077c6732, type: 2}
+  - Enemy3: {fileID: 1781426443893346, guid: a895a65b6c998da4eb2e777d5f4add5d, type: 2}
+  - Enemy4: {fileID: 1779354830552182, guid: 4f7fc0e88a8429e4da4c77d3e376963e, type: 2}
+  - Boss: {fileID: 1416335422388910, guid: 96a44e54873ecb54c8ccb9fcc2ab7696, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

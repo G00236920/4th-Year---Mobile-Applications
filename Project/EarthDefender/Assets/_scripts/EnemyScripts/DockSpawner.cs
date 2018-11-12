@@ -26,27 +26,23 @@ public class DockSpawner : MonoBehaviour {
 			enemyParent = new GameObject(ENEMY_PARENT_NAME);
 		}
 
-		SpawnRepeating();
-	
-	}
-
-	private void SpawnRepeating(){
+		GameRules.Instance.setNoOfEnemies(9);
 
 		InvokeRepeating(SPAWN_METHOD, spawnDelay, spawnInterval);
-
+	
 	}
-
+	
 	private void Spawn(){
 
 		GameObject enemyChoice = null;
 		
-		if( (GameRules.Instance.enemiesToSpawn > 0) && (GameRules.Instance.maxEnemies > GameRules.Instance.enemiesAlive) ){
+		if( (GameRules.Instance.getNoOfEnemies() > 0) && (GameRules.Instance.maxEnemies > GameRules.Instance.getNoOfEnemiesAlive()) ){
 			
 			enemyChoice = randomEnemy();
 			spawnEnemies(enemyChoice);
 
 		}
-		if(GameRules.Instance.enemiesToSpawn == 0){
+		if(GameRules.Instance.getNoOfEnemies() == 0){
 
 			enemyChoice = Boss;
 			SoundManager.Instance.PlayMusic(SoundManager.Instance.boss);
@@ -87,8 +83,8 @@ public class DockSpawner : MonoBehaviour {
 			
 			follower.Speed = enemyStartSpeed;
 
-			GameRules.Instance.enemiesToSpawn -= 1;
-			GameRules.Instance.enemiesAlive += 1;
+			GameRules.Instance.setNoOfEnemies(GameRules.Instance.getNoOfEnemies() - 1);
+			GameRules.Instance.setNoOfEnemiesAlive(GameRules.Instance.getNoOfEnemiesAlive() +1);
 	}
 
 }

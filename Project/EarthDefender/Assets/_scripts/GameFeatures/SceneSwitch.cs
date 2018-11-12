@@ -9,8 +9,6 @@ public class SceneSwitch : MonoBehaviour {
     private static SceneSwitch _instance;
     public static SceneSwitch Instance { get { return _instance; } }
 
-    private int levelCount = 2;
-
 	private void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -25,25 +23,30 @@ public class SceneSwitch : MonoBehaviour {
     
     public void PlayGame()
     {
-        GameRules.Instance.enemiesToSpawn = 9;
+        GameRules.Instance.setNoOfEnemies(9);
         SceneManager.LoadScene("Level1", LoadSceneMode.Single);
         SoundManager.Instance.PlayMusic(SoundManager.Instance.level1);
     }
 
-    public void nextLevel()
+    public void Level2()
     {
-        GameRules.Instance.enemiesToSpawn = 9;
-        SceneManager.LoadScene("Level"+levelCount, LoadSceneMode.Single);
-        SoundManager.Instance.PlayMusic(SoundManager.Instance.level1);
-        levelCount++;
+        GameRules.Instance.setNoOfEnemies(9);
+        SceneManager.LoadScene("Level2", LoadSceneMode.Single);
+        SoundManager.Instance.PlayMusic(SoundManager.Instance.level2);
+    }
+
+    public void Level3()
+    {
+        GameRules.Instance.setNoOfEnemies(9);
+        SceneManager.LoadScene("Level3", LoadSceneMode.Single);
+        SoundManager.Instance.PlayMusic(SoundManager.Instance.level3);
     }
   
     public void endGame()
     {
-        GameRules.Instance.enemiesToSpawn = 9;
+        GameRules.Instance.setNoOfEnemies(9);
         ScoreKeeper.Instance.reset();
         GameRules.Instance.reset();
-        levelCount = 2;
         SceneManager.LoadScene("StartScreen", LoadSceneMode.Single);
     }
     

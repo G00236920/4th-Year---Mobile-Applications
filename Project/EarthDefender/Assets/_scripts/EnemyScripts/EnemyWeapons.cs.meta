@@ -3,7 +3,8 @@ guid: 71df91bc900f91b4596c34f0b76f188b
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - phaser: {fileID: 1120729871147586, guid: 14c743202b9636744aa039de178bb290, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

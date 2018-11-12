@@ -57,6 +57,8 @@
      <Compile Include="Assets\_scripts\EnemyScripts\EnemyHealth.cs" />
      <Compile Include="Assets\_scripts\EnemyScripts\EnemyWeapons.cs" />
      <Compile Include="Assets\_scripts\EnemyScripts\Level1Boss.cs" />
+     <Compile Include="Assets\_scripts\EnemyScripts\Level2Boss.cs" />
+     <Compile Include="Assets\_scripts\EnemyScripts\Level3Boss.cs" />
      <Compile Include="Assets\_scripts\EnemyScripts\WaypointFollower.cs" />
      <Compile Include="Assets\_scripts\EnemyScripts\WayPoints.cs" />
      <Compile Include="Assets\_scripts\GameFeatures\GameRules.cs" />

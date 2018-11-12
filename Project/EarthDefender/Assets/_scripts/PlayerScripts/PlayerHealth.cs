@@ -8,10 +8,6 @@ public class PlayerHealth : MonoBehaviour {
     {
 		ScoreKeeper.Instance.decreaseLives();
 
-        if(ScoreKeeper.Instance.getLives() == 0){
-            SceneSwitch.Instance.GameOver();
-        }
-
     }
 
 }

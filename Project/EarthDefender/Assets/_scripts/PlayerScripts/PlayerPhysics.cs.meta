@@ -3,7 +3,12 @@ guid: 8ab842f22ca011e4d90e4dd3d7581213
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Phaser: {fileID: 1009854311745950, guid: 9eaeca4165f66874bb50ffbd36ff77b1, type: 2}
+  - Torpedo: {fileID: 1662621562680532, guid: ee257a27c6c639748bcc8103899578db, type: 2}
+  - icon: {instanceID: 0}
+  - beamImage: {instanceID: 0}
+  - torpImage: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

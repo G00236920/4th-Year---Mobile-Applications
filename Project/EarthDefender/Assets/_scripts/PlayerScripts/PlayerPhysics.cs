@@ -32,12 +32,14 @@ public class PlayerPhysics : MonoBehaviour {
 
     void FixedUpdate ()
     {
-        if(ScoreKeeper.Instance.getLives() > 0){
+        if(ScoreKeeper.Instance.getLives() >= 0){
 
-            if(transform.childCount==0){
+            if(transform.childCount == 0){
                 SpawnPlayer();
+                ScoreKeeper.Instance.decreaseLives();
                 return;
             }
+            
 
             float moveHorizontal = Input.GetAxis ("Horizontal");
             float moveVertical = Input.GetAxis ("Vertical");
@@ -48,6 +50,9 @@ public class PlayerPhysics : MonoBehaviour {
                 rb.AddForce (movement * Thrust);
             }
             
+        }
+        else{
+            SceneSwitch.Instance.GameOver();
         }
         
     }
@@ -63,12 +68,11 @@ public class PlayerPhysics : MonoBehaviour {
     }
 
     public void Fire(){
-
         switch(WeaponType.name){
-            case "PlayerPhaser":
+            case "PPhaser":
                 FirePhaser();
             break;
-            case "PlayerTorpedo":
+            case "PTorpedo":
                FireTorpedo();
             break;
         }
@@ -77,13 +81,13 @@ public class PlayerPhysics : MonoBehaviour {
 
     public void ChangeWeaponType(){
             switch(WeaponType.name){
-                case "PlayerPhaser":
+                case "PPhaser":
                     if(GameRules.Instance.getTorp()){
                         icon.GetComponent<Image>().sprite = torpImage;
                         WeaponType = Torpedo;   
                     }
                 break;
-                case "PlayerTorpedo":
+                case "PTorpedo":
                     icon.GetComponent<Image>().sprite = beamImage;
                     WeaponType = Phaser;
                 break;

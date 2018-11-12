@@ -38,7 +38,6 @@ GameObject:
   - component: {fileID: 4923211446527042}
   - component: {fileID: 114128554001762296}
   - component: {fileID: 65469568850909986}
-  - component: {fileID: 114226372353443628}
   m_Layer: 0
   m_Name: prometheusPlayer
   m_TagString: Untagged
@@ -173,16 +172,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1a49135b71ae0ea498e61585a8468569, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114226372353443628
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1781707648334622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74a276c7cd15a3047971273bd1d8a5dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

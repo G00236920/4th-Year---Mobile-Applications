@@ -418,7 +418,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 114972257537371360, guid: 80b93c23106be4b448aa87ecec4d61fc,
           type: 2}
-        m_MethodName: nextLevel
+        m_MethodName: Level2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

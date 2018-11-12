@@ -23,7 +23,7 @@ public class EnemyHealth : MonoBehaviour {
 
 			SoundManager.Instance.Play(SoundManager.Instance.destroyed);
 			ScoreKeeper.Instance.score += pointValue;
-			GameRules.Instance.enemiesAlive--;
+			GameRules.Instance.setNoOfEnemiesAlive(GameRules.Instance.getNoOfEnemiesAlive() -1);
 			Destroy(gameObject);
 
 		}

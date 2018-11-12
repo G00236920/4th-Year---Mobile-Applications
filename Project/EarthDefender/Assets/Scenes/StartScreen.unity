@@ -743,6 +743,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MenuMusic: {fileID: 8300000, guid: 1151dd0efb87810479814a22065fea48, type: 3}
   level1: {fileID: 8300000, guid: aafe0d3b9838852419fe503596005742, type: 3}
+  level2: {fileID: 8300000, guid: b8ebc13602d349046b10be07a3691cba, type: 3}
+  level3: {fileID: 8300000, guid: 69c10b44ea1c28a4e9da436e116d267d, type: 3}
   beam: {fileID: 8300000, guid: 1183eb1753654c64cad63e3d4c648f89, type: 3}
   torpedo: {fileID: 8300000, guid: ceee5c0028f63da49b058aba73a0c6ee, type: 3}
   destroyed: {fileID: 8300000, guid: 392286d16a882da428d9e3cb69d4abf4, type: 3}

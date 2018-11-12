@@ -6,9 +6,9 @@ public class GameRules : MonoBehaviour {
 
 	private static GameRules _instance;
     public static GameRules Instance { get { return _instance; } }
-	public int enemiesToSpawn = 9;
+	public static int enemiesToSpawn = 9;
 	public int maxEnemies = 2;
-	public int enemiesAlive = 0;
+	public static int enemiesAlive = 0;
 	private static bool torpUnlocked = false;
 	public bool defUnlocked = false;
 	public bool entUnlocked = false;
@@ -66,10 +66,27 @@ public class GameRules : MonoBehaviour {
 
 	public void reset(){
 
+		shipChoice = prometheus;
 		enemiesToSpawn = 9;
 		torpUnlocked = false;
 		defUnlocked = false;
 		entUnlocked = false;
 
+	}
+
+	public int getNoOfEnemies(){
+		return enemiesToSpawn;
+	}
+
+	public void setNoOfEnemies(int n){
+		enemiesToSpawn = n;
+	}
+
+	public int getNoOfEnemiesAlive(){
+		return enemiesAlive;
+	}
+
+	public void setNoOfEnemiesAlive(int n){
+		enemiesAlive = n;
 	}
 }

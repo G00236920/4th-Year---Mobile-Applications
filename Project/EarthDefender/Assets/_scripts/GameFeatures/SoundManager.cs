@@ -7,6 +7,8 @@ public class SoundManager : MonoBehaviour {
 
 	public AudioClip MenuMusic;
 	public AudioClip level1;
+	public AudioClip level2;
+	public AudioClip level3;
 	public AudioClip beam;
 	public AudioClip torpedo;
 	public AudioClip destroyed;
