@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 14337
+  controlID: 75
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 14338
+  controlID: 56
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 14339
+  controlID: 57
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -368,23 +368,23 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a4d00000
-    m_LastClickedID: 53412
-    m_ExpandedIDs: 5e16f2ffbe2af2ff342df2ff7234f2ff0689f2ffd68ef2ffb4e3f2ff3660f3ff56f8f3ff5e32f4fff64ff4ff0279f6ff5879f6ffd47cf6ff00a1f6ff32a1f6ff86a6f6ffdca6f6ff28b3f6ff7eb3f6ff1a20f7fffc21f7ff2e23f7ffca26f7ffb8f7f7ff0ef8f7ff74fbf7ff28fdf7ffae66f9ff0606faff1a16faffcc17faffa642fdff1e49fdffa04cfdff4a00feffea07feff1a09feff7061feffb864feffca66feff2076feffa495fefffa95feff5299feff8ca0feffd8e0feff2ee1feffeeecfeff9eeefeff6cf7feff6858ffffbe58ffffe6fbfffff4ffffff00000000acc60000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: aa1efbff001ffbffa497fbff88c7fbff6c1cfeff0235ffff5e66ffffcaebffff52f3ffffe6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: EnemySpaceship
+      m_OriginalName: EnemySpaceship
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -342656
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
@@ -420,14 +420,14 @@ MonoBehaviour:
     height: 533
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 9926.1724007
+  lastFramingTime: 5961.7275006
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.21927793, y: 0.819435, z: -9.852045}
+    m_Target: {x: -0.021720896, y: -0.15662508, z: 10.005859}
     speed: 2
-    m_Value: {x: -0.21927793, y: 0.819435, z: -9.852045}
+    m_Value: {x: -0.021720896, y: -0.15662508, z: 10.005859}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -459,9 +459,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.9402566
+    m_Target: 11.0449705
     speed: 2
-    m_Value: 6.9402566
+    m_Value: 11.0449705
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -535,20 +535,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/_scripts/GameFeatures
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/_scripts/GameFeatures
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\nltes\Documents\GitHub\4th-Year---Mobile-Applications\Project\EarthDefender
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 062b0000
-    m_LastClickedID: 11014
-    m_ExpandedIDs: 000000001c2a0000802d0000382e0000e6360000e8360000ea360000ec360000ee360000f0360000f2360000f4360000f6360000f8360000fa360000fc360000fe36000000370000023700000437000006370000b85e00000a5f00001c60000072600000969700008298000000ca9a3bffffff7f
+    m_SelectedIDs: 68350000
+    m_LastClickedID: 13672
+    m_ExpandedIDs: 000000001c2a0000f42b0000502e0000742e0000462f00005a33000084340000fe38000000390000023900000439000006390000083900000a3900000c3900000e39000010390000123900001439000016390000183900001a3900001c3900001e390000203900002239000024390000aa3b0000c63b0000e63b00004048000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -576,7 +576,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001c2a0000802d0000382e0000e6360000e8360000ea360000ec360000ee360000f0360000f2360000f4360000f6360000f8360000fa360000fc360000fe36000000370000023700000437000006370000b85e00000a5f00001c60000072600000969700008298000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000001c2a0000f42b0000742e0000462f00005a33000084340000fe38000000390000023900000439000006390000083900000a3900000c3900000e39000010390000123900001439000016390000183900001a3900001c3900001e390000203900002239000024390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -603,8 +603,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000940a0000f20bffff440800009c49000002800100
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000940a0000f20bffff440800009c49000002800100c2470000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
