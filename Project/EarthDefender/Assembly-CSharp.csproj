@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\_scripts\EnemyScripts\DockSpawner.cs" />
      <Compile Include="Assets\_scripts\EnemyScripts\EnemyHealth.cs" />
+     <Compile Include="Assets\_scripts\EnemyScripts\EnemyWeapons.cs" />
      <Compile Include="Assets\_scripts\EnemyScripts\Level1Boss.cs" />
      <Compile Include="Assets\_scripts\EnemyScripts\WaypointFollower.cs" />
      <Compile Include="Assets\_scripts\EnemyScripts\WayPoints.cs" />
@@ -68,6 +69,7 @@
      <Compile Include="Assets\_scripts\PlayerScripts\AccelerometerControls.cs" />
      <Compile Include="Assets\_scripts\PlayerScripts\ControllerControls.cs" />
      <Compile Include="Assets\_scripts\PlayerScripts\KeyboardControls.cs" />
+     <Compile Include="Assets\_scripts\PlayerScripts\PlayerHealth.cs" />
      <Compile Include="Assets\_scripts\PlayerScripts\PlayerPhysics.cs" />
      <Compile Include="Assets\_scripts\WeaponScripts\PhaserScript.cs" />
      <Compile Include="Assets\_scripts\WeaponScripts\TorpedoScript.cs" />

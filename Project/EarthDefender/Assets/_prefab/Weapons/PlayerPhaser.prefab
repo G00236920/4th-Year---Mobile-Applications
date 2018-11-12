@@ -97,6 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 15
+  col: {r: 1, g: 0, b: 0, a: 0.02}
+  playerWeapon: 1
 --- !u!136 &136796780626020028
 CapsuleCollider:
   m_ObjectHideFlags: 1

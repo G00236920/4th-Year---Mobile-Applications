@@ -6,7 +6,7 @@ public class Level1Boss : MonoBehaviour {
 
     void OnDestroy()
     {
-		SceneSwitch.Instance.Transition();
+		  SceneSwitch.Instance.Transition();
     }
 
 }

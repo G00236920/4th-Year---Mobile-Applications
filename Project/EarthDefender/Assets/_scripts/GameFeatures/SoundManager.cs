@@ -56,11 +56,8 @@ public class SoundManager : MonoBehaviour {
 	public void PlayMusic(AudioClip clip)
 	{
 		currentClip = clip;
-
 		MusicSource.clip = clip;
-
 		MusicSource.Play();
-
 	}
 
 	void Update(){

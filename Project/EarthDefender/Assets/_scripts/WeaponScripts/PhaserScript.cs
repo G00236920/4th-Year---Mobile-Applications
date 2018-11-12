@@ -6,7 +6,10 @@ public class PhaserScript : MonoBehaviour {
 
 	[SerializeField]
 	private float thrust = 30;
-
+	[SerializeField]
+	private Color col = new Color(0,0,0, .02f);
+	[SerializeField]
+	private bool playerWeapon = true;
 	private Rigidbody rb;
 
 
@@ -16,19 +19,22 @@ public class PhaserScript : MonoBehaviour {
 		rb = transform.gameObject.AddComponent<Rigidbody>();
 		gameObject.AddComponent<TrailRenderer>();
 
-		gameObject.GetComponent<Renderer>().material.color = new Color(255,0,0,.1f);
+		gameObject.GetComponent<Renderer>().material.color = col;
 
 		TrailRenderer trail = gameObject.GetComponent<TrailRenderer>();
 
 		trail.widthMultiplier =  .04f;
-		trail.material.SetColor("_Color", new Color(255,0,0, .02f));
+		trail.material.SetColor("_Color", col);
 		trail.material.SetColor("_TintColor", new Color(0,0,0,.02f));
 		trail.time = .08f ;
 		
 		rb.useGravity = false;
+		
+		if(playerWeapon)
+			SoundManager.Instance.Play(SoundManager.Instance.beam);
+		else
+			SoundManager.Instance.PlayEnemy(SoundManager.Instance.beam);
 
-		SoundManager.Instance.Play(SoundManager.Instance.beam);
-	
 	}
 
 	void Update(){
@@ -39,7 +45,7 @@ public class PhaserScript : MonoBehaviour {
 	void FixedUpdate () {
 
 		rb.AddForce(transform.up *  Time.deltaTime * thrust, ForceMode.Impulse);
-
+	
 	}
 
 	void OnCollisionEnter(Collision collision)
@@ -47,9 +53,8 @@ public class PhaserScript : MonoBehaviour {
 		if(collision.gameObject.name == gameObject.name){
 			return;
 		}
-		if(collision.gameObject.name.Contains("Enemy")){
-			
-			flash(collision.gameObject);
+		if(collision.gameObject.name.Contains("Enemy") && playerWeapon){
+
 			int health = collision.collider.gameObject.GetComponent<EnemyHealth>().health;
 			int damage = collision.collider.gameObject.GetComponent<EnemyHealth>().damagePerHitTaken/2;
 
@@ -58,20 +63,10 @@ public class PhaserScript : MonoBehaviour {
 			Destroy(gameObject);
 
 		}
-
-    }
-
-	 IEnumerator flash(GameObject enemy){
-		Debug.Log("here");
-		int count = 5;
-		 
-		while( count > 0 ){
-			Debug.Log(count);
-			yield return new WaitForSeconds(1);
-			enemy.GetComponent<Renderer>().enabled = false;
-			count--;
+		if(collision.gameObject.name.Contains("Player") && !playerWeapon){
+			Destroy(collision.gameObject);
 		}
 
-	 }
+    }
 
 }

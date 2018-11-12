@@ -15,7 +15,11 @@ public class PlayerPhysics : MonoBehaviour {
     private GameObject WeaponType;
     private Rigidbody rb;
 
-    void Start()
+    void Start(){
+        SpawnPlayer();
+    }
+
+    void SpawnPlayer()
     {
         GameObject player = Instantiate(GameRules.Instance.getShip());
         player.transform.parent = gameObject.transform;
@@ -28,22 +32,33 @@ public class PlayerPhysics : MonoBehaviour {
 
     void FixedUpdate ()
     {
+        if(ScoreKeeper.Instance.getLives() > 0){
 
-        float moveHorizontal = Input.GetAxis ("Horizontal");
-        float moveVertical = Input.GetAxis ("Vertical");
+            if(transform.childCount==0){
+                SpawnPlayer();
+                return;
+            }
 
-        Vector3 movement = new Vector3 (moveHorizontal, moveVertical, 0.0f);
+            float moveHorizontal = Input.GetAxis ("Horizontal");
+            float moveVertical = Input.GetAxis ("Vertical");
 
-        rb.AddForce (movement * Thrust);
+            Vector3 movement = new Vector3 (moveHorizontal, moveVertical, 0.0f);
+
+            if( transform.childCount != 0){
+                rb.AddForce (movement * Thrust);
+            }
+            
+        }
+        
     }
 
     void Update(){
         
-     Vector3 pos = transform.GetChild(0).position;
-
-     pos.z = 0;
-
-     transform.GetChild(0).position = pos;
+        if( transform.childCount != 0){
+            Vector3 pos = transform.GetChild(0).position;
+            pos.z = 0;
+            transform.GetChild(0).position = pos;
+        }
 
     }
 

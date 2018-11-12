@@ -9,6 +9,8 @@ public class EnemyHealth : MonoBehaviour {
 	[SerializeField]
 	public int damagePerHitTaken = 100;
 	public int pointValue = 0;
+
+	private int counter = 10;
 	
 	void Start(){
 		pointValue = health;
@@ -28,6 +30,24 @@ public class EnemyHealth : MonoBehaviour {
 
 	}
 
+    void OnCollisionEnter(Collision collision) {
 
+		InvokeRepeating("Toggler", 0, .4f);
+
+	}
+
+	void Toggler() {
+
+		if (--counter == 0) {
+			CancelInvoke("Toggler");
+			counter = 10;
+		}
+
+		if(gameObject.activeSelf)
+			gameObject.SetActive(false);
+		else
+			gameObject.SetActive(true);
+		
+	}
 
 }

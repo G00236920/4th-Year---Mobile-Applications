@@ -11,6 +11,8 @@ public class ScoreKeeper : MonoBehaviour {
     public static ScoreKeeper Instance { get { return _instance; } }
 
 	public int score;
+	
+	private static int lives = 3;
 
 	void Start () {
 
@@ -31,12 +33,38 @@ public class ScoreKeeper : MonoBehaviour {
 	void Update () {
 
 		GameObject scoreOutput = GameObject.Find("ScoreValue");
+		GameObject livesOutput = GameObject.Find("LivesLeft");
 
 		if(scoreOutput!=null){
 			Text scoreText = scoreOutput.GetComponent<Text>();
 			scoreText.text = score.ToString();
 		}
+
+		if(livesOutput!=null){
+			Text liveText = livesOutput.GetComponent<Text>();
+			liveText.text = lives.ToString();
+		}
 		
+	}
+
+	public void reset(){
+		setLives(3);
+		score = 0;
+	}
+
+	public void setLives(int l){
+		lives = l;
+	}
+
+	public void decreaseLives(){
+		lives--;
+	}
+
+	public void increaseLives(){
+		lives++;
+	}
+	public int getLives(){
+		return lives;
 	}
 
 }
