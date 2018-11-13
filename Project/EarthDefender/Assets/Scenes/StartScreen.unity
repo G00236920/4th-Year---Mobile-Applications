@@ -438,7 +438,7 @@ Prefab:
     - target: {fileID: 223668212977193390, guid: 9062c37be8bc1844ca15606b2d476a5d,
         type: 2}
       propertyPath: m_RenderMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224668925554225934, guid: 9062c37be8bc1844ca15606b2d476a5d,
         type: 2}
@@ -463,7 +463,7 @@ Prefab:
     - target: {fileID: 223668212977193390, guid: 9062c37be8bc1844ca15606b2d476a5d,
         type: 2}
       propertyPath: m_PlaneDistance
-      value: 100
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1155242205891612, guid: 9062c37be8bc1844ca15606b2d476a5d, type: 2}
       propertyPath: m_IsActive
@@ -492,17 +492,22 @@ Prefab:
     - target: {fileID: 114151739857762130, guid: 9062c37be8bc1844ca15606b2d476a5d,
         type: 2}
       propertyPath: m_ReferenceResolution.x
-      value: 1280
+      value: 1920
       objectReference: {fileID: 0}
     - target: {fileID: 114151739857762130, guid: 9062c37be8bc1844ca15606b2d476a5d,
         type: 2}
       propertyPath: m_ReferenceResolution.y
-      value: 720
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 114151739857762130, guid: 9062c37be8bc1844ca15606b2d476a5d,
         type: 2}
       propertyPath: m_ScreenMatchMode
-      value: 0
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 223668212977193390, guid: 9062c37be8bc1844ca15606b2d476a5d,
+        type: 2}
+      propertyPath: m_PixelPerfect
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9062c37be8bc1844ca15606b2d476a5d, type: 2}
@@ -799,12 +804,12 @@ Prefab:
     - target: {fileID: 223632179907598714, guid: bddced48742adbc43aea27a444a22814,
         type: 2}
       propertyPath: m_RenderMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114288203839849802, guid: bddced48742adbc43aea27a444a22814,
         type: 2}
       propertyPath: m_UiScaleMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114288203839849802, guid: bddced48742adbc43aea27a444a22814,
         type: 2}
@@ -815,6 +820,15 @@ Prefab:
         type: 2}
       propertyPath: m_ReferenceResolution.y
       value: 720
+      objectReference: {fileID: 0}
+    - target: {fileID: 1222511877043906, guid: bddced48742adbc43aea27a444a22814, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 223632179907598714, guid: bddced48742adbc43aea27a444a22814,
+        type: 2}
+      propertyPath: m_PlaneDistance
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bddced48742adbc43aea27a444a22814, type: 2}
@@ -1020,12 +1034,12 @@ Prefab:
     - target: {fileID: 223269470878828936, guid: bb4ccca794da88a478f37a39a05c8607,
         type: 2}
       propertyPath: m_RenderMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114778791956452392, guid: bb4ccca794da88a478f37a39a05c8607,
         type: 2}
       propertyPath: m_UiScaleMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114778791956452392, guid: bb4ccca794da88a478f37a39a05c8607,
         type: 2}
@@ -1036,6 +1050,11 @@ Prefab:
         type: 2}
       propertyPath: m_ReferenceResolution.y
       value: 720
+      objectReference: {fileID: 0}
+    - target: {fileID: 223269470878828936, guid: bb4ccca794da88a478f37a39a05c8607,
+        type: 2}
+      propertyPath: m_PlaneDistance
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb4ccca794da88a478f37a39a05c8607, type: 2}

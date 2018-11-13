@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{D2C1FA49-835A-DD76-122C-FCB22E1841EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EarthDefender", "Assembly-CSharp.csproj", "{D2C1FA49-835A-DD76-122C-FCB22E1841EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
