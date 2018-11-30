@@ -31,6 +31,7 @@ public class SceneSwitch : MonoBehaviour {
     public void Level2()
     {
         GameRules.Instance.setNoOfEnemies(9);
+        GameRules.Instance.setNoOfEnemiesAlive(0);
         SceneManager.LoadScene("Level2", LoadSceneMode.Single);
         SoundManager.Instance.PlayMusic(SoundManager.Instance.level2);
     }
@@ -38,6 +39,7 @@ public class SceneSwitch : MonoBehaviour {
     public void Level3()
     {
         GameRules.Instance.setNoOfEnemies(9);
+        GameRules.Instance.setNoOfEnemiesAlive(0);
         SceneManager.LoadScene("Level3", LoadSceneMode.Single);
         SoundManager.Instance.PlayMusic(SoundManager.Instance.level3);
     }

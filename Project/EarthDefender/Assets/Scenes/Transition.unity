@@ -342,6 +342,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4948622666684952, guid: c6aac541f4ca33949b6a3e0d02d11eb5,
     type: 2}
   m_PrefabInternal: {fileID: 315194456}
+--- !u!1 &315194458 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1980382068974238, guid: c6aac541f4ca33949b6a3e0d02d11eb5,
+    type: 2}
+  m_PrefabInternal: {fileID: 315194456}
 --- !u!1 &319734175
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,6 +613,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4923211446527042, guid: 8e24a229b04b0cc4b924775389663b8d,
     type: 2}
   m_PrefabInternal: {fileID: 580700161}
+--- !u!1 &580700163 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1781707648334622, guid: 8e24a229b04b0cc4b924775389663b8d,
+    type: 2}
+  m_PrefabInternal: {fileID: 580700161}
 --- !u!1 &609377071
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,7 +751,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Unlock
+  m_Text: Select
 --- !u!222 &640394289
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -820,6 +830,11 @@ Prefab:
 --- !u!4 &663036630 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4795129663889620, guid: 7a97f8f6ffad2b64cbf733debfd114be,
+    type: 2}
+  m_PrefabInternal: {fileID: 663036629}
+--- !u!1 &663036631 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1701939301829608, guid: 7a97f8f6ffad2b64cbf733debfd114be,
     type: 2}
   m_PrefabInternal: {fileID: 663036629}
 --- !u!1 &674674807
@@ -1261,7 +1276,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Unlock
+  m_Text: Select
 --- !u!222 &841650369
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1430,6 +1445,7 @@ GameObject:
   - component: {fileID: 1380594355}
   - component: {fileID: 1380594354}
   - component: {fileID: 1380594353}
+  - component: {fileID: 1380594357}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -1523,6 +1539,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1380594357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1380594352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2292dce74aad8ea48b6e5a421b40a5cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TorpButton: {fileID: 674674807}
+  PromButton: {fileID: 723422430}
+  EntButton: {fileID: 1655942186}
+  DefButton: {fileID: 792880012}
+  prom: {fileID: 580700163}
+  def: {fileID: 315194458}
+  ent: {fileID: 663036631}
 --- !u!1 &1388131202
 GameObject:
   m_ObjectHideFlags: 0
