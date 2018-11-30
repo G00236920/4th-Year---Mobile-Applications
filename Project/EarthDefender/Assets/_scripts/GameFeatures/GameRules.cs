@@ -29,7 +29,7 @@ public class GameRules : MonoBehaviour {
             _instance = this;
         }
 
-		shipChoice = defiant;
+		shipChoice = prometheus;
 	}
 
     private void Update()
