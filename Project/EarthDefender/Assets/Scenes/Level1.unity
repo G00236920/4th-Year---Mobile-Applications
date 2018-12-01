@@ -667,6 +667,16 @@ Prefab:
       propertyPath: m_Name
       value: Overlay
       objectReference: {fileID: 0}
+    - target: {fileID: 224128338228404886, guid: cecf73318af4134408cf911a82767a04,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -474
+      objectReference: {fileID: 0}
+    - target: {fileID: 224744181188065782, guid: cecf73318af4134408cf911a82767a04,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -370
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cecf73318af4134408cf911a82767a04, type: 2}
   m_IsPrefabAsset: 0
