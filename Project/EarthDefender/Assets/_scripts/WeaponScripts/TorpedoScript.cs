@@ -56,7 +56,7 @@ public class TorpedoScript : MonoBehaviour {
 			int damage = collision.collider.gameObject.GetComponent<EnemyHealth>().damagePerHitTaken;
 
 			collision.collider.gameObject.GetComponent<EnemyHealth>().health = health - damage;
-
+			
 			Destroy(gameObject);
 			
 		}

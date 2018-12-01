@@ -12,7 +12,7 @@ public class DockSpawner : MonoBehaviour {
 	[SerializeField]
 	private float spawnInterval = 1.3f;
 	[SerializeField]
-	private float enemyStartSpeed = 1f;
+	private float enemyStartSpeed = 0f;
 	public GameObject Enemy1;
 	public GameObject Enemy2;
 	public GameObject Enemy3;

@@ -852,6 +852,11 @@ Prefab:
       value: 
       objectReference: {fileID: 1843270560290210, guid: 5a67d574faf7e154c85e97bb272d67c5,
         type: 2}
+    - target: {fileID: 114930655592541468, guid: 9e8487356b564cb4fac49a10d8e7c898,
+        type: 2}
+      propertyPath: enemyStartSpeed
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e8487356b564cb4fac49a10d8e7c898, type: 2}
   m_IsPrefabAsset: 0
