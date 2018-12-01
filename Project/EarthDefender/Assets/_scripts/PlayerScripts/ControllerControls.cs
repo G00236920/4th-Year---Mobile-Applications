@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class ControllerControls : MonoBehaviour {
 
+    private PlayerPhysics Phys;
+    
 	// Use this for initialization
 	void Start () {
 		
+        Phys = GetComponent<PlayerPhysics>();
+        
 	}
 
-    // Update is called once per frame
-    void Update()
-    {
+	// Update is called once per frame
+	void FixedUpdate () {
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Phys.Fire();
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            Phys.ChangeWeaponType();
+        }
 
     }
 

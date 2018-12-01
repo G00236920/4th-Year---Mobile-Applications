@@ -34,6 +34,10 @@ public class EnemyHealth : MonoBehaviour {
 		if(collision.gameObject.name.Contains("Player") || collision.gameObject.name.Contains("PPhaser")  || collision.gameObject.name.Contains("PTorpedo")){
 			InvokeRepeating("Toggler", 0, .4f);
 		}
+
+		if(collision.gameObject.name.Contains("defiantPlayer(Clone)") || collision.gameObject.name.Contains("enterprise_dPlayer(Clone)")  || collision.gameObject.name.Contains("prometheusPlayer(Clone)")){
+			Destroy(collision.gameObject);
+		}
 	}
 
 	void Toggler() {
