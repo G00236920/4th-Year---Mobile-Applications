@@ -16,12 +16,17 @@ public class ControllerControls : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown("joystick button 0"))
         {
             Phys.Fire();
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown("joystick button 2"))
+        {
+            Phys.ChangeWeaponType();
+        }
+
+        if (Input.GetKeyDown("joystick button 7"))
         {
             Phys.ChangeWeaponType();
         }
