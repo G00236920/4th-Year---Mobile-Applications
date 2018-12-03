@@ -64,6 +64,7 @@
      <Compile Include="Assets\_scripts\GameFeatures\ButtonController.cs" />
      <Compile Include="Assets\_scripts\GameFeatures\GameRules.cs" />
      <Compile Include="Assets\_scripts\GameFeatures\MenuControl.cs" />
+     <Compile Include="Assets\_scripts\GameFeatures\PauseMenu.cs" />
      <Compile Include="Assets\_scripts\GameFeatures\PlayArea.cs" />
      <Compile Include="Assets\_scripts\GameFeatures\SceneSwitch.cs" />
      <Compile Include="Assets\_scripts\GameFeatures\ScoreKeeper.cs" />
