@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phaser: {fileID: 1120729871147586, guid: 14c743202b9636744aa039de178bb290, type: 2}
+  MultiFire: 1
 --- !u!114 &114986261857450718
 MonoBehaviour:
   m_ObjectHideFlags: 1
