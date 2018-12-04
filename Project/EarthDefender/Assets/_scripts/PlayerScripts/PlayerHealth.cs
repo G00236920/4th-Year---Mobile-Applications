@@ -6,8 +6,8 @@ public class PlayerHealth : MonoBehaviour {
 
     void OnDestroy()
     {
-		ScoreKeeper.Instance.decreaseLives();
-
+      //if the player is destroyed, lower the number of lives remaining
+		  ScoreKeeper.Instance.decreaseLives();
     }
 
 }

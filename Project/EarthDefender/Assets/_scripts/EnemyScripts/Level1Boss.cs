@@ -6,7 +6,8 @@ public class Level1Boss : MonoBehaviour {
 
     void OnDestroy()
     {
-		  SceneSwitch.Instance.Transition();
+        //if this boss dies, got to the transition screen before the second level
+		SceneSwitch.Instance.Transition();
     }
 
 }

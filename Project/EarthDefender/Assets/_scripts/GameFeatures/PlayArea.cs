@@ -12,6 +12,8 @@ public class PlayArea : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+
+        //keep the object this script is attached to, within the view of the camera
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
         
         pos.x = Mathf.Clamp01(pos.x);
