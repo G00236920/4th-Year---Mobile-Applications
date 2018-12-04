@@ -9,7 +9,7 @@ public class GameRules : MonoBehaviour {
 	public static int enemiesToSpawn = 9;
 	public int maxEnemies = 2;
 	public static int enemiesAlive = 0;
-	private static bool torpUnlocked = false;
+	private static bool torpUnlocked = true;
 	public static bool defUnlocked = false;
 	public static bool entUnlocked = false;
 	private static GameObject shipChoice;
