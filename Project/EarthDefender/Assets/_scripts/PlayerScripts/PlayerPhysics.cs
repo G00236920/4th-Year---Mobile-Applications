@@ -75,7 +75,7 @@ public class PlayerPhysics : MonoBehaviour {
                     FirePhaser();
                 break;
                 case "PTorpedo":
-                FireTorpedo();
+                    FireTorpedo();
                 break;
             }
         }
