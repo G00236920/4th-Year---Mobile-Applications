@@ -10,8 +10,8 @@ public class GameRules : MonoBehaviour {
 	public int maxEnemies = 2;
 	public static int enemiesAlive = 0;
 	private static bool torpUnlocked = false;
-	public bool defUnlocked = false;
-	public bool entUnlocked = false;
+	public static bool defUnlocked = false;
+	public static bool entUnlocked = false;
 	private static GameObject shipChoice;
 	public GameObject prometheus;
 	public GameObject defiant;
@@ -37,15 +37,48 @@ public class GameRules : MonoBehaviour {
     }
 
     public void UnlockTorp(){
-		setTorp(true);
+
+		if(!torpUnlocked){
+
+			if(ScoreKeeper.Instance.getScore() > 1000)
+			{
+				ScoreKeeper.Instance.setScore(1000);
+				setTorp(true);
+			}
+
+		}
+
     }
 
 	public void SelectEnterprise(){
-		setShip(enterprise);
+		
+		if(!ButtonController.Instance.getEnterpriseUnlocked()){
+			if(ScoreKeeper.Instance.getScore() > 3000)
+			{
+				ButtonController.Instance.setEnterpriseUnlocked(true);
+				ScoreKeeper.Instance.setScore(3000);
+			}
+		}
+		else{
+			setShip(enterprise);
+		}
+
 	}
 
 	private void SelectDefiant(){
-		setShip(defiant);
+		
+		if(!ButtonController.Instance.getDefiantUnlocked()){
+
+			if(ScoreKeeper.Instance.getScore() > 2000)
+			{
+				ButtonController.Instance.setDefiantUnlocked(true);
+				ScoreKeeper.Instance.setScore(2000);
+			}
+		}
+		else{
+			setShip(defiant);
+		}
+		
 	}
 
 	public void SelectPrometheus(){

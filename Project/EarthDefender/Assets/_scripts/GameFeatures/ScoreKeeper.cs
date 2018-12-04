@@ -67,4 +67,12 @@ public class ScoreKeeper : MonoBehaviour {
 		return lives;
 	}
 
+	public int getScore(){
+		return score;
+	}
+
+	public void setScore(int value){
+		score -= value;
+	}
+
 }

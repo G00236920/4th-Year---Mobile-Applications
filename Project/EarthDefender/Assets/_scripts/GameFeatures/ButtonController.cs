@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ButtonController : MonoBehaviour {
 
@@ -12,10 +13,23 @@ public class ButtonController : MonoBehaviour {
     public GameObject def;
     public GameObject ent;
 
+    private bool defiantUnlocked = false;
+
+    private bool enterpriseUnlocked = false;
+
+	private static ButtonController _instance;
+    public static ButtonController Instance { get { return _instance; } }
 
     // Use this for initialization
-    void Start () {
-		
+	void Start () {
+
+		if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        } else {
+            _instance = this;
+        }
+        
 	}
 	
 	// Update is called once per frame
@@ -55,6 +69,10 @@ public class ButtonController : MonoBehaviour {
     void checkDefButton()
     {
 
+        if(defiantUnlocked){
+            DefButton.GetComponentInChildren<Text>().text = "Select";
+        }
+
         if (GameRules.Instance.getShip().name == def.name)
         {
             DefButton.SetActive(false);
@@ -69,6 +87,10 @@ public class ButtonController : MonoBehaviour {
     void checkEntButton()
     {
 
+        if(enterpriseUnlocked){
+            EntButton.GetComponentInChildren<Text>().text = "Select";
+        }
+
         if (GameRules.Instance.getShip().name == ent.name)
         {
             EntButton.SetActive(false);
@@ -78,5 +100,21 @@ public class ButtonController : MonoBehaviour {
             EntButton.SetActive(true);
         }
 
+    }
+
+    public bool getDefiantUnlocked(){
+        return defiantUnlocked;
+    }
+
+    public void setDefiantUnlocked(bool b){
+        defiantUnlocked = b;
+    }
+
+    public bool getEnterpriseUnlocked(){
+        return enterpriseUnlocked;
+    }
+
+    public void setEnterpriseUnlocked(bool b){
+        enterpriseUnlocked = b;
     }
 }
