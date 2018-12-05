@@ -40,7 +40,6 @@ $ git clone https://github.com/Michael-Kidd/4th-Year---Mobile-Applications
 ----------
 
 After you have cloned the program, Run Visual studio Community:
-You can also create a build in unity by pressing CTRL + B.
 
 ![](https://raw.githubusercontent.com/Michael-Kidd/4th-Year---Mobile-Applications/master/Documentation/images/Images%20for%20wiki/VS%20empty.PNG)
 
