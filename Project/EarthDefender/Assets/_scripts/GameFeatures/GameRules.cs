@@ -16,7 +16,7 @@ public class GameRules : MonoBehaviour {
 	public static int enemiesAlive = 0;
 
 	//identify if the items are unlocked
-	private static bool torpUnlocked = true;
+	private static bool torpUnlocked = false;
 	public static bool defUnlocked = false;
 	public static bool entUnlocked = false;
 
@@ -53,7 +53,7 @@ public class GameRules : MonoBehaviour {
 		//if the torpedos are locked
 		if(!torpUnlocked){
 			//if there are enough points to be unlocked
-			if(ScoreKeeper.Instance.getScore() > 1000)
+			if(ScoreKeeper.Instance.getScore() >= 1000)
 			{
 				//subtract the points from the score
 				ScoreKeeper.Instance.setScore(1000);
@@ -70,7 +70,7 @@ public class GameRules : MonoBehaviour {
 		//check if the enterprise is unlocked
 		if(!ButtonController.Instance.getEnterpriseUnlocked()){
 			//check if there are enough points to unlock
-			if(ScoreKeeper.Instance.getScore() > 3000)
+			if(ScoreKeeper.Instance.getScore() >= 3000)
 			{
 				//unlock the enterprise
 				ButtonController.Instance.setEnterpriseUnlocked(true);
@@ -89,7 +89,7 @@ public class GameRules : MonoBehaviour {
 		//check if the defiant is unlocked
 		if(!ButtonController.Instance.getDefiantUnlocked()){
 			//check if there are enough points to unlock it
-			if(ScoreKeeper.Instance.getScore() > 2000)
+			if(ScoreKeeper.Instance.getScore() >= 2000)
 			{
 				//set it as unlocked
 				ButtonController.Instance.setDefiantUnlocked(true);
